@@ -49,3 +49,8 @@ category-all-page {
   .category-all-page .category-list-child {
     padding-left: 10px;
   }
+
+  .icon-Music:before{content:"\E6C8"}
+  /* 之前的图标unicode，开头的$改成\,如 $E6C --> \E6C */
+  #header .header-nav .social a.Music{background: #bc2f2e; border:1px solid #bc2f2e}
+  /* #header .header-nav .social a.Music:hover{border: #feeeed 3px solid } */
