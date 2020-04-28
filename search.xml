@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Vscode 设置Snippets</title>
+      <link href="/2020/04/28/test/"/>
+      <url>/2020/04/28/test/</url>
+      
+        <content type="html"><![CDATA[<p>Snippets即快速地插入代码片段的方法。可以通过快捷键或者自动补全生效。这里简单地记叙一下在Vscode下使用Snippets的方法，以防后日遗忘。</p><a id="more"></a><h3 id="如何配置？"><a href="#如何配置？" class="headerlink" title="如何配置？"></a>如何配置？</h3><p>Snippets对于不同类别的文件可以使用不同的配置文件。例如对于Markdown来说，可以通过选择<code>File -&gt; Preferences -&gt; User Snippets</code>路径进入指令栏，输入Markdown进入相应的配置文件。当然也可以通过在命令栏输入<code>preferences: snippets</code>进入。<br>简单的配置文件如下：</p><figure class="highlight smalltalk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">"newblog"</span>: &#123;</span><br><span class="line"><span class="comment">"prefix"</span>: <span class="comment">"nb"</span>,</span><br><span class="line"><span class="comment">"body"</span>: [</span><br><span class="line"><span class="comment">"---"</span>,</span><br><span class="line"><span class="comment">"title: "</span>,</span><br><span class="line"><span class="comment">"date: 2020-04-24 13:53:09"</span>,</span><br><span class="line"><span class="comment">"layout: page"</span>,</span><br><span class="line"><span class="comment">"toc: true"</span>,</span><br><span class="line"><span class="comment">"mathjax: true"</span>,</span><br><span class="line"><span class="comment">"tags: []"</span>,</span><br><span class="line"><span class="comment">"categories: []"</span>,</span><br><span class="line"><span class="comment">"---"</span>,</span><br><span class="line"><span class="comment">"&lt;!--more--&gt;$0"</span></span><br><span class="line">],</span><br><span class="line"><span class="comment">"description"</span>: <span class="comment">"create a new blog"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>这里的<code>prefix</code>便是触发Snippets的前置（不知因何缘故，我设置的prefix总是不能生效，尽管主动地调起Intellisense可以使用。）Body是主体，其中<code>$0</code>表示光标出现的位置。可以设置多光标，不过暂时用不上便不在这里展开。</p><h3 id="如何使用？"><a href="#如何使用？" class="headerlink" title="如何使用？"></a>如何使用？</h3><p>理论上可以通过输入“prefix”，然后敲击Tab键补全，但是在我这里不能成功，于是只能通过主动调起。官方默认的<code>ctrl+space</code>和微软输入法的快捷键冲突，所以需要先手动修改一个别的触发，才能生效。这样子Snippets就可以使用了。上述的示例便是对于Blog文件的前置信息的设定，在此之后只需要输入”nb”便可以获得一个前置文件。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技巧 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> vscode </tag>
+            
+            <tag> 快捷方法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>简单的坡县游历</title>
       <link href="/2020/04/27/%E5%9D%A1%E5%8E%BF%E6%B8%B8/"/>
       <url>/2020/04/27/%E5%9D%A1%E5%8E%BF%E6%B8%B8/</url>
