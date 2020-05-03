@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>$\LaTeX 常用语法$</title>
+      <link href="/2020/05/03/LaTeX%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/"/>
+      <url>/2020/05/03/LaTeX%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/</url>
+      
+        <content type="html"><![CDATA[<p>因为最近一段时间有使用$\LaTeX$写公式的需要，所以专门在这里整理一些常用的公式写法，防止后面反复查询。</p><a id="more"></a>  <h3 id="常用符号"><a href="#常用符号" class="headerlink" title="常用符号"></a>常用符号</h3><ul><li><code>\infty</code>: $\infty$</li><li><code>\ge</code>: $\ge$</li><li><code>\le</code>: $\le$</li></ul><h3 id="常用等式"><a href="#常用等式" class="headerlink" title="常用等式"></a>常用等式</h3><p>连等式：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">\begin&#123;aligned&#125;</span><br><span class="line">    A &amp;&#x3D; B+C\\</span><br><span class="line">    &amp;&#x3D;C+D\\</span><br><span class="line">    &amp;&#x3D;D+F</span><br><span class="line">\end&#123;aligned&#125;</span><br></pre></td></tr></table></figure><p>$$<br>    \begin{aligned}<br>        A &amp;= B+C\<br>        &amp;=C+D\<br>        &amp;=D+F<br>    \end{aligned}<br>$$</p><hr><p>大括号等式：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">X_p(w)&#x3D;\left\&#123;</span><br><span class="line">\begin&#123;aligned&#125;</span><br><span class="line">    \frac&#123;1&#125;&#123;2j&#125;,~~~w&#x3D;\frac&#123;\pi&#125;&#123;2&#125; \\</span><br><span class="line">    -\frac&#123;1&#125;&#123;2j&#125;,~~~w&#x3D;-\frac&#123;\pi&#125;&#123;2&#125; \\</span><br><span class="line">    0, ~~~otherwise</span><br><span class="line">    \end&#123;aligned&#125;</span><br><span class="line">\right.</span><br></pre></td></tr></table></figure><p>$$ X_p(w)=\left{<br>    \begin{aligned}<br>    \frac{1}{2j},<del>w=\frac{\pi}{2} \<br>    -\frac{1}{2j},</del>w=-\frac{\pi}{2} \<br>    0, <del>~</del>otherwise<br>    \end{aligned}<br>    \right.<br>$$</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技巧 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> LaTeX </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>VSCode 设置Snippets</title>
       <link href="/2020/04/28/snippets/"/>
       <url>/2020/04/28/snippets/</url>
