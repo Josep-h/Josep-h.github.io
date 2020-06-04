@@ -35,7 +35,39 @@
 <p><strong>3.2 深度特征挖掘</strong><br>使用 ImageNet 预训的 CNN 模型，通过浅层精调，这样构建特征空间。然后使用 PCA 将高维度信息转换为低维度信息，这对于产生等价类非常有用，并且可以降低空间存储要求，提升效率。</p>
 <p><strong>3.3 类分解器</strong><br>特征空间设为 2D 矩阵$A$，$L$是类别，$m$是特征数量，$k$是类数量，$n$是图片数量。为了完成类分解，使用 k-means 做聚类，将类别划分为等价子类。所有的原标签按照新分出的类别，按照欧几里得距离计算最近的类别然后重新分配标签。这样新获得的数据集称为 $B$。</p>
 <p><strong>3.4 Transfer Learning</strong><br>本论文使用通过 ResNet 预训练的模型，并具有优秀的表现。<strong>作者选择仅变动 low-level 的层数而固定住 high-level 层</strong>。</p>
-<p>参数设定：<br>|参数|值|<br>|—|—|<br>|学习率|除最后一层外设定为 0.0001，最后一层设定为 0.01|<br>|批大小|64|<br>|Epoch|256|<br>|Weight Decay|0.01|<br>|Momentum value|0.9|</p>
+<p>参数设定：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>学习率</td>
+<td>除最后一层外设定为 0.0001，最后一层设定为 0.01</td>
+</tr>
+<tr>
+<td>批大小</td>
+<td>64</td>
+</tr>
+<tr>
+<td>Epoch</td>
+<td>256</td>
+</tr>
+<tr>
+<td>Weight Decay</td>
+<td>0.01</td>
+</tr>
+<tr>
+<td>Momentum value</td>
+<td>0.9</td>
+</tr>
+</tbody>
+</table>
+</div>
 <p>因为数据很少，使用 SGD 存在不稳定性，所以使用批训练。损失函数为 cross-entropy。</p>
 <p><strong>3.5 Evaluation 与重组</strong><br>在重组阶段，被赋予的新标签会恢复原来的标签，用来衡量模型的性能。这里使用的量为 Accuracy，Specificity, Sensitivity。各自的定义是：（$TN$ 为 <em>true negative</em>。其余的标记就足够明显了。）</p>
 <script type="math/tex; mode=display">
