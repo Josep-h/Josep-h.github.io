@@ -11,6 +11,10 @@ When setting the primary font stack, apply it to the Pure grid units along
 with `html`, `button`, `input`, `select`, and `textarea`. Pure Grids use
 specific font stacks to ensure the greatest OS/browser compatibility.
 */
+@font-face {
+  font-family: "GenYoMin TW TTF Medium";
+  src: url("https://gitee.com/josep-h/Josep-h/blob/master/images/GenYoMinTW-Medium.ttf"); }
+
 html,
 button,
 input,
