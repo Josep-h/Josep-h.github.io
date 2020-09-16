@@ -13,7 +13,7 @@ specific font stacks to ensure the greatest OS/browser compatibility.
 */
 @font-face {
   font-family: GenYoMin;
-  src: url("/images/simfang.ttf"); }
+  src: url("https://cdn.jsdelivr.net/gh/Josep-h/pics/GenYoMinTW-Medium.ttf"); }
 
 html,
 button,
