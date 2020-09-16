@@ -12,7 +12,7 @@ with `html`, `button`, `input`, `select`, and `textarea`. Pure Grids use
 specific font stacks to ensure the greatest OS/browser compatibility.
 */
 @font-face {
-  font-family: "GenYoMin";
+  font-family: GenYoMin;
   src: url("/images/GenYoMinTW-Medium.ttf"); }
 
 html,
