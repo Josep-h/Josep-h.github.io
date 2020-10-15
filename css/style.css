@@ -184,13 +184,44 @@ div {
     text-indent: .15em; }
     .post .post-meta:before {
       font-family: "FontAwesome";
-      content: "\f073";
+      content: "\f024";
+      padding-right: 0.3em; }
+    .post .post-meta .update:before {
+      font-family: "FontAwesome";
+      content: "\f0f3";
+      padding-right: 0.3em; }
+    .post .post-meta .update_ct:before {
+      font-family: "FontAwesome";
+      content: "\f0ad";
       padding-right: 0.3em; }
     .post .post-meta .category:before {
       font-family: "FontAwesome";
       content: "\f07c";
       padding-right: 0.3em; }
     .post .post-meta #busuanzi_value_page_pv:before {
+      font-family: "FontAwesome";
+      content: "\f024";
+      padding-right: 0.3em; }
+  .post .post-meta-plus {
+    padding: 0;
+    margin: 15px 0 0;
+    color: #6E7173;
+    float: left;
+    display: inline;
+    text-indent: .15em; }
+    .post .post-meta-plus:before {
+      font-family: "FontAwesome";
+      content: "\f0f3";
+      padding-right: 0.3em; }
+    .post .post-meta-plus .update_ct:before {
+      font-family: "FontAwesome";
+      content: "\f0ad";
+      padding-right: 0.3em; }
+    .post .post-meta-plus .category:before {
+      font-family: "FontAwesome";
+      content: "\f07c";
+      padding-right: 0.3em; }
+    .post .post-meta-plus #busuanzi_value_page_pv:before {
       font-family: "FontAwesome";
       content: "\f024";
       padding-right: 0.3em; }
