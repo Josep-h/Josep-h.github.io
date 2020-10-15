@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
  *
  * @package Maupassant
@@ -167,7 +168,14 @@ div {
   color: #888; }
 
 .post {
-  padding: 25px 0 15px; }
+  padding: 25px 0 15px;
+  border-bottom: 2px dashed #ddd; }
+  .post .divier {
+    color: #555;
+    text-align: center; }
+    .post .divier:before {
+      font-family: "FontAwesome";
+      content: "──────\f069──────"; }
   .post .post-title {
     margin: 0;
     color: #555;
