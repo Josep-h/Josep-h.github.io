@@ -8,7 +8,7 @@
 <figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pycorrector</span><br><span class="line">corrected_sent, detail = pycorrector.correct(<span class="string">'少先队员因该为老人让坐'</span>)</span><br><span class="line">print(corrected_sent, detail)</span><br></pre></td></tr></table></figure>
 <p>它会返回纠正过的句子以及哪些部分是需要纠正的。但是它这个工具的准确率实在不行，这个纠正句子基本是不能信的。</p>
 <h2 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h2><p>但是上面只是获得了环境，为了更好地使用，不得不写了一个新的脚本。由于这个工具的准确率实在不行，而且速度也并不快，所以为了避免每一次对所有文件的搜索，系统维持了一个名为<code>checked.json</code>的文件，里面存有已经检查过的所有文件。如果你希望重新检查该文件，则从该文件中移除对应的名字即可。此外，每一次检查回将错误信息记录在一个名为<code>log.txt</code>的文件中。这两个文件都会储存在 Hexo 最外层的文件夹中。</p>
-<p>每一次运行该程序都会覆盖<code>log.txt</code>，并且将每一次检查过的新文件加入<code>checked.json</code>文件。具体代码附在该链接中：<a href="&#39;https://josep-h.gitee.io/code/analysis.py&#39;">Link</a>，请自行下载。该文件中的地址可能需要微调。我将其放在 Hexo 根目录的名为<code>update</code>的子文件夹中。</p>
+<p>每一次运行该程序都会覆盖<code>log.txt</code>，并且将每一次检查过的新文件加入<code>checked.json</code>文件。具体代码附在该链接中：<a href="https://josep-h.gitee.io/code/analysis.py">Link</a>，请自行下载。该文件中的地址可能需要微调。我将其放在 Hexo 根目录的名为<code>update</code>的子文件夹中。</p>
 <p>最后可以将其加入 update 脚本中，这样每一次更新可以获得新的 log 文件查看是否有 Typo。最后再吐槽一句，它的准确率不行(它甚至使用的还是结巴分词……)。如果各位发现了更好的工具，敬请告知。</p>
 <p>最后三点注意：</p>
 <ol>
