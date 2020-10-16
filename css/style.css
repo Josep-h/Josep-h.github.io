@@ -169,7 +169,7 @@ div {
 
 .post {
   padding: 25px 0 15px;
-  border-bottom: 2px dashed #ddd; }
+  border-bottom: 1px solid #ddd; }
   .post .divier {
     color: #555;
     text-align: center; }
@@ -180,9 +180,28 @@ div {
     margin: 0;
     color: #555;
     text-align: left;
-    font: bold 25px/1.1 "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif; }
+    font: bold 43px/1.1 "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif; }
     .post .post-title a {
       color: #555; }
+  .post .post-title-index {
+    margin: 0;
+    color: #555;
+    text-align: left;
+    font: bold 29px/1.1 "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif; }
+    .post .post-title-index a {
+      color: #555; }
+  .post .post-pin {
+    padding: 0;
+    color: #6E7173;
+    margin: 15px 0 0;
+    float: left;
+    display: inline;
+    text-indent: .15em; }
+    .post .post-pin:before {
+      color: #ff8a80;
+      font-family: "FontAwesome";
+      content: "\f08d";
+      padding-right: 0.3em; }
   .post .post-meta {
     padding: 0;
     margin: 15px 0 0;
@@ -192,17 +211,31 @@ div {
     text-indent: .15em; }
     .post .post-meta:before {
       font-family: "FontAwesome";
+      color: #75a478;
       content: "\f024";
       padding-right: 0.3em; }
+    .post .post-meta .time:before {
+      color: #9c786c;
+      font-family: "FontAwesome";
+      content: "\f0f4";
+      padding-right: 0.3em; }
+    .post .post-meta .count:before {
+      color: #90a4ae;
+      font-family: "FontAwesome";
+      content: "\f10d";
+      padding-right: 0.3em; }
     .post .post-meta .update:before {
+      color: #65499c;
       font-family: "FontAwesome";
       content: "\f0f3";
       padding-right: 0.3em; }
     .post .post-meta .update_ct:before {
+      color: #4bacb8;
       font-family: "FontAwesome";
       content: "\f0ad";
       padding-right: 0.3em; }
     .post .post-meta .category:before {
+      color: #c8a415;
       font-family: "FontAwesome";
       content: "\f07c";
       padding-right: 0.3em; }
@@ -218,14 +251,17 @@ div {
     display: inline;
     text-indent: .15em; }
     .post .post-meta-plus:before {
+      color: #65499c;
       font-family: "FontAwesome";
       content: "\f0f3";
       padding-right: 0.3em; }
     .post .post-meta-plus .update_ct:before {
+      color: #4bacb8;
       font-family: "FontAwesome";
       content: "\f0ad";
       padding-right: 0.3em; }
     .post .post-meta-plus .category:before {
+      color: #c8a415;
       font-family: "FontAwesome";
       content: "\f07c";
       padding-right: 0.3em; }
@@ -356,7 +392,6 @@ div {
       padding-right: 0.3em; }
 
 .page-navigator {
-  border-top: 1px solid #ddd;
   list-style: none;
   margin-top: 25px;
   padding: 25px 0 0;
