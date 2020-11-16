@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>被打断的马七</title>
+      <link href="/2020/11/16/essay/music/%E8%A2%AB%E6%89%93%E6%96%AD%E7%9A%84%E9%A9%AC%E4%B8%83/"/>
+      <url>/2020/11/16/essay/music/%E8%A2%AB%E6%89%93%E6%96%AD%E7%9A%84%E9%A9%AC%E4%B8%83/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>上海音乐学院歌剧院建成没有多久，第一次进这个厅。但体验实在一言难尽。</p><blockquote><p>地点：上音歌剧院<br>指挥：张亮<br>乐团：上海爱乐交响乐团<br>座位：乐池正前方偏音乐厅后部<br>开始前的食物：港式餐厅</p></blockquote><a id="more"></a>  <p>　　《马七》本身是一部晦涩的作品，在此之前听了很多次也不得要领。由于这部作品的冷门，对于这种部作品的讨论也很少。令人印象最深刻的果然还是第一乐章最开始的那个标志性的不和谐音。比较有趣的地方是第一次见识到这么多配器的同时使用。吉他、曼陀铃、管钟、钢片琴、沙锤、锣等等。特别是曼陀铃的声音，十分独特有趣。（当时我听到曼陀铃的时候想了很久这个乐器是什么，发现是曼陀铃之后又在乐池里找了一阵子。果然我对这个曲目非常不熟悉。）最后的疑惑是，现场的吉他应该是加了扩音器的。但是在马勒的时代，扩音器也被使用了吗？如果没有，后面的观众想必听不见吉它的声音吧。<br>　　<br>　　但听完的感悟果然还是我不懂这部作品。不知道它在描绘什么样的意境，有什么样的故事。虽然其名为夜曲，在第三乐章依旧十分张扬。我实在没太懂。乐团现场演绎平平，不过众多的独奏没有明显翻车还算不错。</p><p>　　然后是上爱。不知道是不是由于这是新开放的音乐厅，观众尚没有建立起好的礼仪。在第一个乐章结束的时候，竟然传来了不小的鼓掌声。甚至有一些没能及时入场的观众在这个时候入场，使第二乐章和第一乐章完全割裂，意境全无。更甚的是，在后面每一个乐章间，观众依旧鼓掌，声音甚至更大了。实在不太能理解。</p><p>　　以及进场的手续问题。为了进场，经过了检查健康码、形成码、两次验票种种繁杂冗余的步骤，是在给人留下了很糟糕的印象。想上一次听贝多芬也不是如此场景，实在滑稽。</p><p>　　总而言之，是一场不太妙的演出。也很难给人留下深刻的印象。着实有些失望。最后回寝室的路上。听见一起去现场的乐迷朋友说，上交的某场演出，有一次因为观众在乐章间鼓掌，指挥转过身用指挥棒指着那个鼓掌的区域良久。上交的观众确实是不鼓掌的，在我印象里。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随笔 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Music </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Joseph&#39;s S8</title>
       <link href="/2020/10/22/essay/Joseph&#39;s%20S8/"/>
       <url>/2020/10/22/essay/Joseph&#39;s%20S8/</url>
@@ -762,33 +787,6 @@
     
     
     <entry>
-      <title>VSCode连接Python调试</title>
-      <link href="/2020/07/04/tech/VSC/vscode%E8%BF%9E%E6%8E%A5python/"/>
-      <url>/2020/07/04/tech/VSC/vscode%E8%BF%9E%E6%8E%A5python/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>虽然一直用的是 VSC 和 Python 的组合，但是之前都是硬核 print 调试，并且需要从 Anaconda prompt 进入文件夹操作。确实觉得这个方法很难受，于是开始调整 VSC 连接 Python。中途遇到了不少的坑，这里对其进行一个整理。</p><a id="more"></a>  <h2 id="Anaconda环境"><a href="#Anaconda环境" class="headerlink" title="Anaconda环境"></a>Anaconda环境</h2><p>首先需要安装 Anaconda，Anaconda 会默认安装一个带有 conda 命令的 shell，但是在普通的 cmd 和 powershell 里都不能用这个东西。需要在环境变量中添加下述：</p><figure class="highlight taggerscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">\A</span>naconda3</span><br><span class="line"><span class="symbol">\A</span>naconda3<span class="symbol">\S</span>cripts</span><br><span class="line"><span class="symbol">\A</span>naconda3<span class="symbol">\L</span>ibrary<span class="symbol">\b</span>in</span><br></pre></td></tr></table></figure><p>然后重启，这样可以在 cmd 里使用 Ananconda，例如 conda activate base 等命令。然而在 Powershell 里不知为何不能使用。使用<code>conda init</code>方法宣告无效。</p><h2 id="VSC和Python"><a href="#VSC和Python" class="headerlink" title="VSC和Python"></a>VSC和Python</h2><p>VSC 默认的 Terminal 是 Powershell，所以不能正常使用<code>conda</code>命令，所以需要添加 cmd。</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">"<span class="selector-tag">terminal</span><span class="selector-class">.integrated</span><span class="selector-class">.shell</span><span class="selector-class">.windows</span>": "<span class="selector-tag">C</span>:\\<span class="selector-tag">Windows</span>\\<span class="selector-tag">System32</span>\\<span class="selector-tag">cmd</span><span class="selector-class">.exe</span>",</span><br></pre></td></tr></table></figure><p>这个时候会报找不到 package 的错误，需要在 VSC 中添加 conda 的地址。在 VSC 设置中搜索<code>conda</code>并输入：</p><figure class="highlight taggerscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:<span class="symbol">\U</span>sers<span class="symbol">\1</span>3808<span class="symbol">\A</span>naconda3<span class="symbol">\S</span>cripts<span class="symbol">\c</span>onda.exe</span><br></pre></td></tr></table></figure><p>同时在设置中添加：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"code-runner.executorMap"</span>: &#123;</span><br><span class="line">  <span class="string">"python"</span>:<span class="string">"<span class="variable">$pythonPath</span> <span class="variable">$fullFileName</span>"</span>,</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure><p>根据上述的设置，将 Terminal 变为 cmd，然后即可正常 debug。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 技巧 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> vscode </tag>
-            
-            <tag> Python </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Transformers使用</title>
       <link href="/2020/07/04/tech/Huggingface/"/>
       <url>/2020/07/04/tech/Huggingface/</url>
@@ -808,6 +806,33 @@
             <tag> PyTorch </tag>
             
             <tag> NLP </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>VSCode连接Python调试</title>
+      <link href="/2020/07/04/tech/VSC/vscode%E8%BF%9E%E6%8E%A5python/"/>
+      <url>/2020/07/04/tech/VSC/vscode%E8%BF%9E%E6%8E%A5python/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>虽然一直用的是 VSC 和 Python 的组合，但是之前都是硬核 print 调试，并且需要从 Anaconda prompt 进入文件夹操作。确实觉得这个方法很难受，于是开始调整 VSC 连接 Python。中途遇到了不少的坑，这里对其进行一个整理。</p><a id="more"></a>  <h2 id="Anaconda环境"><a href="#Anaconda环境" class="headerlink" title="Anaconda环境"></a>Anaconda环境</h2><p>首先需要安装 Anaconda，Anaconda 会默认安装一个带有 conda 命令的 shell，但是在普通的 cmd 和 powershell 里都不能用这个东西。需要在环境变量中添加下述：</p><figure class="highlight taggerscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">\A</span>naconda3</span><br><span class="line"><span class="symbol">\A</span>naconda3<span class="symbol">\S</span>cripts</span><br><span class="line"><span class="symbol">\A</span>naconda3<span class="symbol">\L</span>ibrary<span class="symbol">\b</span>in</span><br></pre></td></tr></table></figure><p>然后重启，这样可以在 cmd 里使用 Ananconda，例如 conda activate base 等命令。然而在 Powershell 里不知为何不能使用。使用<code>conda init</code>方法宣告无效。</p><h2 id="VSC和Python"><a href="#VSC和Python" class="headerlink" title="VSC和Python"></a>VSC和Python</h2><p>VSC 默认的 Terminal 是 Powershell，所以不能正常使用<code>conda</code>命令，所以需要添加 cmd。</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">"<span class="selector-tag">terminal</span><span class="selector-class">.integrated</span><span class="selector-class">.shell</span><span class="selector-class">.windows</span>": "<span class="selector-tag">C</span>:\\<span class="selector-tag">Windows</span>\\<span class="selector-tag">System32</span>\\<span class="selector-tag">cmd</span><span class="selector-class">.exe</span>",</span><br></pre></td></tr></table></figure><p>这个时候会报找不到 package 的错误，需要在 VSC 中添加 conda 的地址。在 VSC 设置中搜索<code>conda</code>并输入：</p><figure class="highlight taggerscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:<span class="symbol">\U</span>sers<span class="symbol">\1</span>3808<span class="symbol">\A</span>naconda3<span class="symbol">\S</span>cripts<span class="symbol">\c</span>onda.exe</span><br></pre></td></tr></table></figure><p>同时在设置中添加：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"code-runner.executorMap"</span>: &#123;</span><br><span class="line">  <span class="string">"python"</span>:<span class="string">"<span class="variable">$pythonPath</span> <span class="variable">$fullFileName</span>"</span>,</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure><p>根据上述的设置，将 Terminal 变为 cmd，然后即可正常 debug。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技巧 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> vscode </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
@@ -841,33 +866,6 @@
     
     
     <entry>
-      <title>Windows上安装LaTeX</title>
-      <link href="/2020/07/03/tech/LaTeX/windows%E4%B8%8A%E5%AE%89%E8%A3%85/"/>
-      <url>/2020/07/03/tech/LaTeX/windows%E4%B8%8A%E5%AE%89%E8%A3%85/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>    <div id="aplayer-voQWbbAg" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="1455701955" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"    ></div><p>这不是第一次安装 latex 了，但每次安装都会遇到一些问题，消耗搜索的时间，这次对其作一个整理。</p><a id="more"></a>  <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>首先是从 tex live 的官网上下载到最新版的 texlive 并安装。基本上，官网上下到的是一个叫做<code>install-tl-windows.exe</code>的可执行文件。这个文件点开后即可开始下载。下载的时间很长，预计从早上开始下载需要在傍晚才能下载结束。</p><p>不出意外安装结束之后，windows 的“开始”会出现 TexWorks Editor 等等工具。以及 Tex 的路径可以自动加载到系统环境变量中，重启之后即可生效。</p><h2 id="VSCODE"><a href="#VSCODE" class="headerlink" title="VSCODE"></a>VSCODE</h2><p>使用 VSC 可能会比较舒服，但是总有一些小问题。为了在 VSC 中预览 LaTeX，需要下载拓展：LaTeX Workshop。下载结束后 VSC 可以获得高亮 Tex 代码的能力。</p><p>在左侧的工具栏会在选中 Tex 文件时获得新的 LaTeX 标志，其中可以选择编译文件或者在 VSC Tab 中预览文件。</p><p>为了和 VSC 链接，需要打开 VSC 的设置代码，添加下述代码：</p><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">"latex-workshop.latex.recipes": [</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">"name"</span>: <span class="string">"xelatex"</span>,</span><br><span class="line">    <span class="attr">"tools"</span>: [</span><br><span class="line">      <span class="string">"xelatex"</span></span><br><span class="line">    ]</span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">"name"</span>: <span class="string">"xelatex -&gt; bibtex -&gt; xelatex*2"</span>,</span><br><span class="line">    <span class="attr">"tools"</span>: [</span><br><span class="line">      <span class="string">"xelatex"</span>,</span><br><span class="line">      <span class="string">"bibtex"</span>,</span><br><span class="line">      <span class="string">"xelatex"</span>,</span><br><span class="line">      <span class="string">"xelatex"</span></span><br><span class="line">    ]</span><br><span class="line">  &#125;</span><br><span class="line">],</span><br><span class="line">"latex-workshop.latex.tools": [</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">"name"</span>: <span class="string">"latexmk"</span>,</span><br><span class="line">    <span class="attr">"command"</span>: <span class="string">"latexmk"</span>,</span><br><span class="line">    <span class="attr">"args"</span>: [</span><br><span class="line">      <span class="string">"-synctex=1"</span>,</span><br><span class="line">      <span class="string">"-interaction=nonstopmode"</span>,</span><br><span class="line">      <span class="string">"-file-line-error"</span>,</span><br><span class="line">      <span class="string">"-pdf"</span>,</span><br><span class="line">      <span class="string">"%DOC%"</span></span><br><span class="line">    ]</span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">"name"</span>: <span class="string">"xelatex"</span>,</span><br><span class="line">    <span class="attr">"command"</span>: <span class="string">"xelatex"</span>,</span><br><span class="line">    <span class="attr">"args"</span>: [</span><br><span class="line">      <span class="string">"-synctex=1"</span>,</span><br><span class="line">      <span class="string">"-interaction=nonstopmode"</span>,</span><br><span class="line">      <span class="string">"-file-line-error"</span>,</span><br><span class="line">      <span class="string">"%DOC%"</span></span><br><span class="line">    ]</span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">"name"</span>: <span class="string">"bibtex"</span>,</span><br><span class="line">    <span class="attr">"command"</span>: <span class="string">"bibtex"</span>,</span><br><span class="line">    <span class="attr">"args"</span>: [</span><br><span class="line">      <span class="string">"%DOCFILE%"</span></span><br><span class="line">    ]</span><br><span class="line">  &#125;</span><br><span class="line">],</span><br><span class="line">"latex-preview.command": "xelatex",</span><br><span class="line">"latex-workshop.latex.autoBuild.run": "never"</span><br></pre></td></tr></table></figure><p>上述的代码会将 recipe 加入 build 选项，通过点击编译文件。但在这个设置中，如果文件出现 error，VSC 将会选择终止执行，在终止执行的情况下，虽然可以获得一个 pdf 文件，但是这份文件的一部分内容是有误的，例如 Content 的添加等等，所以这个版本在写作中途可以用来作为参照但并不适合作为最后微调的方法。</p><p>在这个情况下，可以使用 overleaf 或者在文件所在的文件夹下唤起 cmd，使用</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">xelatex</span> <span class="selector-tag">main</span><span class="selector-class">.tex</span></span><br></pre></td></tr></table></figure><p>忽视中间的错误可以获得生成的文件，在这个文件中 Content 等信息是正常的。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 技巧 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> LaTeX </tag>
-            
-            <tag> vscode </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Python 英文文本成分分析</title>
       <link href="/2020/07/03/tech/Python/%E8%8B%B1%E6%96%87%E6%88%90%E5%88%86%E5%88%86%E6%9E%90/"/>
       <url>/2020/07/03/tech/Python/%E8%8B%B1%E6%96%87%E6%88%90%E5%88%86%E5%88%86%E6%9E%90/</url>
@@ -887,6 +885,33 @@
             <tag> NLP </tag>
             
             <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Windows上安装LaTeX</title>
+      <link href="/2020/07/03/tech/LaTeX/windows%E4%B8%8A%E5%AE%89%E8%A3%85/"/>
+      <url>/2020/07/03/tech/LaTeX/windows%E4%B8%8A%E5%AE%89%E8%A3%85/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>    <div id="aplayer-voQWbbAg" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="1455701955" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"    ></div><p>这不是第一次安装 latex 了，但每次安装都会遇到一些问题，消耗搜索的时间，这次对其作一个整理。</p><a id="more"></a>  <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>首先是从 tex live 的官网上下载到最新版的 texlive 并安装。基本上，官网上下到的是一个叫做<code>install-tl-windows.exe</code>的可执行文件。这个文件点开后即可开始下载。下载的时间很长，预计从早上开始下载需要在傍晚才能下载结束。</p><p>不出意外安装结束之后，windows 的“开始”会出现 TexWorks Editor 等等工具。以及 Tex 的路径可以自动加载到系统环境变量中，重启之后即可生效。</p><h2 id="VSCODE"><a href="#VSCODE" class="headerlink" title="VSCODE"></a>VSCODE</h2><p>使用 VSC 可能会比较舒服，但是总有一些小问题。为了在 VSC 中预览 LaTeX，需要下载拓展：LaTeX Workshop。下载结束后 VSC 可以获得高亮 Tex 代码的能力。</p><p>在左侧的工具栏会在选中 Tex 文件时获得新的 LaTeX 标志，其中可以选择编译文件或者在 VSC Tab 中预览文件。</p><p>为了和 VSC 链接，需要打开 VSC 的设置代码，添加下述代码：</p><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">"latex-workshop.latex.recipes": [</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">"name"</span>: <span class="string">"xelatex"</span>,</span><br><span class="line">    <span class="attr">"tools"</span>: [</span><br><span class="line">      <span class="string">"xelatex"</span></span><br><span class="line">    ]</span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">"name"</span>: <span class="string">"xelatex -&gt; bibtex -&gt; xelatex*2"</span>,</span><br><span class="line">    <span class="attr">"tools"</span>: [</span><br><span class="line">      <span class="string">"xelatex"</span>,</span><br><span class="line">      <span class="string">"bibtex"</span>,</span><br><span class="line">      <span class="string">"xelatex"</span>,</span><br><span class="line">      <span class="string">"xelatex"</span></span><br><span class="line">    ]</span><br><span class="line">  &#125;</span><br><span class="line">],</span><br><span class="line">"latex-workshop.latex.tools": [</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">"name"</span>: <span class="string">"latexmk"</span>,</span><br><span class="line">    <span class="attr">"command"</span>: <span class="string">"latexmk"</span>,</span><br><span class="line">    <span class="attr">"args"</span>: [</span><br><span class="line">      <span class="string">"-synctex=1"</span>,</span><br><span class="line">      <span class="string">"-interaction=nonstopmode"</span>,</span><br><span class="line">      <span class="string">"-file-line-error"</span>,</span><br><span class="line">      <span class="string">"-pdf"</span>,</span><br><span class="line">      <span class="string">"%DOC%"</span></span><br><span class="line">    ]</span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">"name"</span>: <span class="string">"xelatex"</span>,</span><br><span class="line">    <span class="attr">"command"</span>: <span class="string">"xelatex"</span>,</span><br><span class="line">    <span class="attr">"args"</span>: [</span><br><span class="line">      <span class="string">"-synctex=1"</span>,</span><br><span class="line">      <span class="string">"-interaction=nonstopmode"</span>,</span><br><span class="line">      <span class="string">"-file-line-error"</span>,</span><br><span class="line">      <span class="string">"%DOC%"</span></span><br><span class="line">    ]</span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">"name"</span>: <span class="string">"bibtex"</span>,</span><br><span class="line">    <span class="attr">"command"</span>: <span class="string">"bibtex"</span>,</span><br><span class="line">    <span class="attr">"args"</span>: [</span><br><span class="line">      <span class="string">"%DOCFILE%"</span></span><br><span class="line">    ]</span><br><span class="line">  &#125;</span><br><span class="line">],</span><br><span class="line">"latex-preview.command": "xelatex",</span><br><span class="line">"latex-workshop.latex.autoBuild.run": "never"</span><br></pre></td></tr></table></figure><p>上述的代码会将 recipe 加入 build 选项，通过点击编译文件。但在这个设置中，如果文件出现 error，VSC 将会选择终止执行，在终止执行的情况下，虽然可以获得一个 pdf 文件，但是这份文件的一部分内容是有误的，例如 Content 的添加等等，所以这个版本在写作中途可以用来作为参照但并不适合作为最后微调的方法。</p><p>在这个情况下，可以使用 overleaf 或者在文件所在的文件夹下唤起 cmd，使用</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">xelatex</span> <span class="selector-tag">main</span><span class="selector-class">.tex</span></span><br></pre></td></tr></table></figure><p>忽视中间的错误可以获得生成的文件，在这个文件中 Content 等信息是正常的。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技巧 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> LaTeX </tag>
+            
+            <tag> vscode </tag>
             
         </tags>
       
@@ -947,6 +972,58 @@
     
     
     <entry>
+      <title>深度学习的操作们</title>
+      <link href="/2020/06/27/scholar/DL_%E8%B0%83%E5%8F%82/"/>
+      <url>/2020/06/27/scholar/DL_%E8%B0%83%E5%8F%82/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>每一次深度模型调参都是让人头疼的东西，总感觉有很多玄学的东西能用，但事实上最后效果都不会太好。这里专门记录一些可能会有影响的调参方法。所以这是一个累积更新的文章。希望之后碰到新的方法和雷区能在这里记下，减少调试时间。</p><a id="more"></a>  <h2 id="有效措施"><a href="#有效措施" class="headerlink" title="有效措施"></a>有效措施</h2><h3 id="数据预处理"><a href="#数据预处理" class="headerlink" title="数据预处理"></a>数据预处理</h3><p>数据预处理的效果可能比模型的各种调参来得更加直接有效。对于 NLP 任务可能不那么明显，但是对于 CV 或者 DSP 任务却是立竿见影的。</p><h4 id="数据增广"><a href="#数据增广" class="headerlink" title="数据增广"></a>数据增广</h4><p>计算机视觉中常用的方法。基本是对于图片随机翻转、随机截取、添加高斯模糊、随机遮盖等等措施。其中随机截取和随机翻转是一般都有效的，随机遮盖等则不一定。数据增广可以在模型训练中完成，让模型实时更改数据集内容；也可以在训练前就完成增广；两种方法都用也没有问题。</p><p>对于图片的数据增广方法：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torchvision.transforms <span class="keyword">as</span> tfs</span><br><span class="line">transform = tfs.Compose([</span><br><span class="line">    tfs.Resize((<span class="number">256</span>, <span class="number">256</span>)),  <span class="comment"># 先调整图片大小至256x256</span></span><br><span class="line">    tfs.RandomCrop((<span class="number">224</span>, <span class="number">224</span>)),  <span class="comment"># 再随机裁剪到224x224</span></span><br><span class="line">    tfs.RandomHorizontalFlip(),  <span class="comment"># 随机的图像水平翻转，通俗讲就是图像的左右对调</span></span><br><span class="line">    tfs.RandomRotation(<span class="number">5</span>),</span><br><span class="line">    tfs.ToTensor(),</span><br><span class="line">    tfs.Normalize((<span class="number">0.485</span>, <span class="number">0.456</span>, <span class="number">0.406</span>), (<span class="number">0.229</span>, <span class="number">0.224</span>, <span class="number">0.2225</span>)),  <span class="comment"># 维度和图像的channel相关</span></span><br><span class="line">])</span><br></pre></td></tr></table></figure><p>调用时使用即可：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">img = transform(img)</span><br></pre></td></tr></table></figure></p><h4 id="数据标准化-归一化"><a href="#数据标准化-归一化" class="headerlink" title="数据标准化/归一化"></a>数据标准化/归一化</h4><p>即使是非常简单的数据标准化/归一化，就能取得显著的 performance 提高以及训练速度的大幅度提升。对于图像信息，可以使用灰度图均衡化，而对于数字信号或者其他信息，则可以使用 MinMax，标准化众多方法。这个对于模型训练速度的提升可能是数量级上。</p><p>但无论如何，数据标准化几乎应当是数据预处理的必要操作，绝对不能跳过。</p><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 直方图均衡化</span></span><br><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line">img = cv2.equalizeHist(img)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 标准化 - 对于一维数据</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">std</span><span class="params">(data)</span>:</span></span><br><span class="line">    mu = np.mean(data)</span><br><span class="line">    sigma = np.std(data)</span><br><span class="line">    <span class="keyword">return</span> (data - mu) / sigma</span><br></pre></td></tr></table></figure><h3 id="训练"><a href="#训练" class="headerlink" title="训练"></a>训练</h3><h4 id="损失函数权重"><a href="#损失函数权重" class="headerlink" title="损失函数权重"></a>损失函数权重</h4><p>对于普通的损失函数，对于不同的类加以相同的权进行处理。但是对于类分别不均的训练集/测试集，可以轻微调整模型的损失函数权重，一般权重添加方法是按照训练集的比例强行加权。一般这样就能获得略好的效果。但是还有一定的调整空间。事实上使用这个方法对于一些数据分布不均的方法有非常明显的效果。不过如果实在分布不均的话，可以考虑数据预处理方法解决。</p><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">weight = torch.Tensor([<span class="number">1</span>, <span class="number">0.8</span>])</span><br><span class="line">lossfun = nn.CrossEntropyLoss(weight = weight)</span><br></pre></td></tr></table></figure><p>如果使用 cuda 训练，还应该申明<code>.cuda()</code>。</p><h4 id="学习率衰减"><a href="#学习率衰减" class="headerlink" title="学习率衰减"></a>学习率衰减</h4><p>原来习惯性用 Adam 也就没有再关心过学习率的问题，但事实上学习率仍然是有影响的。使用过小的学习率前期的训练时间过长而且容易进入一个不太好的局部最优解，相反使用大的学习率在前期能够势如破竹。（甚至是数量级的提升）但是训练到后期的模型 performan 却需要更小的学习率，所以这里引入学习率衰减的方法。</p><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">adjust_learning_rate</span><span class="params">(optimizer, epoch)</span>:</span></span><br><span class="line">    lr = <span class="number">1e-4</span> * (<span class="number">0.4</span> ** (epoch // <span class="number">8</span>))</span><br><span class="line">    <span class="keyword">for</span> param_group <span class="keyword">in</span> optimizer.param_groups:</span><br><span class="line">        param_group[<span class="string">'lr'</span>] = lr</span><br><span class="line">adjust_learning_rate(optimizer, epoch)</span><br></pre></td></tr></table></figure><p>传入的 optimizer 参数就是 PyTorch 的模型。对于 Adam 模型，建议使用 $1e^{-4}$ 作为起始训练速率。</p><h2 id="不稳定措施"><a href="#不稳定措施" class="headerlink" title="不稳定措施"></a>不稳定措施</h2><h3 id="添加模型的全连接层"><a href="#添加模型的全连接层" class="headerlink" title="添加模型的全连接层"></a>添加模型的全连接层</h3><p>添加全连接层会大幅度增加模型的复杂度以及参数量，强制减低模型的训练速度，但而提高模型的过拟合能力。所以增加全连接层方法在数据量不足以支撑的情况下是绝对不推荐的。但是有的时候能发挥一定的作用。</p><h3 id="Dropout"><a href="#Dropout" class="headerlink" title="Dropout"></a>Dropout</h3><p>Dropout 不是万能的方法。例如对于最后的分类器叠加 Dropout 反而会使模型的表现变得滑稽。Dropout 的添加是需要通过反复实验的。不过建议在模型的一开始不要使用 Dropout，因为模型自身的能力可能就不够，不能够很好地拟合训练数据。而且增加 Dropout 增加了训练时间，对于判断模型的强度也是不利的。在实验的最后发现过拟合严重可以考虑尝试使用 Dropout 方法。</p><h3 id="Multi-task"><a href="#Multi-task" class="headerlink" title="Multi-task"></a>Multi-task</h3><p>这是一个很不确定的东西。Multi-task 的效果随着设计的多任务而变化。事实上，在我使用 Multi-task 的情况下，几乎都没有得到明显的提升，有的时候甚至会拖后腿使模型的能力下降。所以 Multi-task 是需要仔细思考后使用的。</p><h3 id="加载预训数据"><a href="#加载预训数据" class="headerlink" title="加载预训数据"></a>加载预训数据</h3><p>对于 NLP 任务，使用预训参数是必要的，特别是对于 BERT 等模型，即使固定参数，只训练后面的部分也能获得很好的效果。但是对于 CV 任务这个效果却不是一定的。例如在 COVID-19 分类任务中，我使用了 ResNet18 作为一个模型，并加载了 PyTorch 的预训结果，获得了训练速度的显著提升；然而在语谱图分类时，使用预训的结果并没有明显的优势。</p><p>所以模型的训练对象和预训的数据集应该有一定的共同之处时才能够发挥作用。语谱图是完全和 ImageNet 不同的东西，所以不能发挥作用也是在预期之中的。</p><h2 id="基本无效措施"><a href="#基本无效措施" class="headerlink" title="基本无效措施"></a>基本无效措施</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ML </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Python常用系统操作及文件操作</title>
+      <link href="/2020/06/27/tech/Python/%E7%B3%BB%E7%BB%9F%E6%93%8D%E4%BD%9C/"/>
+      <url>/2020/06/27/tech/Python/%E7%B3%BB%E7%BB%9F%E6%93%8D%E4%BD%9C/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>    <div id="aplayer-PMbeNVxe" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="465149196" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"    ></div><p>在预处理文件以及训练模式时经常用到一个文件操作，这里稍加整理。</p><a id="more"></a>  <h2 id="os"><a href="#os" class="headerlink" title="os"></a>os</h2><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> shutil</span><br></pre></td></tr></table></figure><p>OS 操作很常用，用于获取文件夹之类的操作。主要使用<code>os</code>和<code>shutil</code>两个库文件。</p><h3 id="基本函数"><a href="#基本函数" class="headerlink" title="基本函数"></a>基本函数</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">os.path.exists(path)</span><br><span class="line">os.path.isdir(path)</span><br><span class="line">os.path.isfile(path)</span><br><span class="line">files = os.listdir(path)</span><br></pre></td></tr></table></figure><p>判断路径是否存在，是一个文件夹还是一个文件。对于一个文件夹可以继续使用 <code>listdir</code> 获得文件内容</p><h3 id="创建文件夹"><a href="#创建文件夹" class="headerlink" title="创建文件夹"></a>创建文件夹</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">mkdir</span><span class="params">(path)</span>:</span></span><br><span class="line"> </span><br><span class="line">    path=path.strip()</span><br><span class="line">    path=path.rstrip(<span class="string">"\\"</span>)</span><br><span class="line"> </span><br><span class="line">    isExists=os.path.exists(path)</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> isExists:</span><br><span class="line">        os.makedirs(path) </span><br><span class="line">        print(<span class="string">'OK!'</span>)</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(<span class="string">'Existed!)</span></span><br><span class="line"><span class="string">        return False</span></span><br></pre></td></tr></table></figure><h3 id="删除文件夹"><a href="#删除文件夹" class="headerlink" title="删除文件夹"></a>删除文件夹</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">os.remove(path)</span><br><span class="line">os.rmdir(path)        <span class="comment">#仅能删除空文件夹</span></span><br><span class="line">shutil.rmtree(path)   <span class="comment">#递归删除所有内容</span></span><br></pre></td></tr></table></figure><h3 id="重命名"><a href="#重命名" class="headerlink" title="重命名"></a>重命名</h3><p>对于文件夹和文件的操作方法是一样的。</p><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">os.rename(<span class="string">"test"</span>,<span class="string">"test1"</span>)    </span><br><span class="line">os.rename(<span class="string">"test.txt"</span>,<span class="string">"test1.txt"</span>)</span><br></pre></td></tr></table></figure><h3 id="复制和移动"><a href="#复制和移动" class="headerlink" title="复制和移动"></a>复制和移动</h3><p>需要使用 <code>shutil</code> 的库文件操作。</p><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">shutil.copyfile(<span class="string">"foo.txt"</span>,<span class="string">"bar.txt"</span>)  <span class="comment"># file only</span></span><br><span class="line">shutil.copytree(<span class="string">"foo"</span>,<span class="string">"bar"</span>)          <span class="comment"># dir only</span></span><br><span class="line">shutil.copy(<span class="string">"foo"</span>,<span class="string">"bar"</span>)              <span class="comment"># both</span></span><br><span class="line">shutil.move(<span class="string">"foo"</span>,<span class="string">"bar"</span>)</span><br></pre></td></tr></table></figure><ul><li>上述的文件的复制方法，存在覆盖能力。文件夹的复制方法则不允许在目标地址存在相应文件夹。</li><li>如果调用<code>.copy()</code>，输入为一个文件和一个文件夹，则会将文件复制入文件夹中。</li><li><code>.move()</code>细节和<code>.copy()</code>相同</li></ul><h2 id="文件读写操作"><a href="#文件读写操作" class="headerlink" title="文件读写操作"></a>文件读写操作</h2><h3 id="基本读写"><a href="#基本读写" class="headerlink" title="基本读写"></a>基本读写</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> open(path, <span class="string">'w'</span>, encoding = <span class="string">"utf-8"</span>) <span class="keyword">as</span> f:</span><br><span class="line">    f.write(<span class="string">'foobar!'</span>)</span><br><span class="line"><span class="keyword">with</span> open(path, <span class="string">'r'</span>, encoding = <span class="string">"utf-8"</span>) <span class="keyword">as</span> f:</span><br><span class="line">    lines = f.readlines()</span><br><span class="line">    <span class="keyword">for</span> line <span class="keyword">in</span> lines:</span><br><span class="line">        <span class="keyword">pass</span></span><br></pre></td></tr></table></figure><p>模式：</p><div class="table-container"><table><thead><tr><th>参数</th><th>效果</th></tr></thead><tbody><tr><td>w</td><td>写文件</td></tr><tr><td>r</td><td>读文件</td></tr><tr><td>a</td><td>追加文件</td></tr></tbody></table></div><h3 id="特殊：json"><a href="#特殊：json" class="headerlink" title="特殊：json"></a>特殊：json</h3><p>JSON 文件是常用的格式，为了方便存储字典型结构的最优选择。</p><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'dataset.json'</span>, <span class="string">'r'</span>) <span class="keyword">as</span> f:</span><br><span class="line">    data = json.load(f)</span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'dataset.json'</span>, <span class="string">'w'</span>) <span class="keyword">as</span> f:</span><br><span class="line">    json.dump(dataset, f)</span><br></pre></td></tr></table></figure><h3 id="特殊：pickle"><a href="#特殊：pickle" class="headerlink" title="特殊：pickle"></a>特殊：pickle</h3><p>pickle 常用来保存二进制数据结构。基本上是什么都能存。不过对于 PyTorch，还是建议使用 torch 自带的 save 函数，不然 torch 会报 warning。</p><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pickle <span class="keyword">as</span> pk</span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'dataset.pk'</span>, <span class="string">'wb'</span>) <span class="keyword">as</span> f:</span><br><span class="line">    pk.dump(data, f)</span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'dataset.pk'</span>, <span class="string">'rb'</span>) <span class="keyword">as</span> f:</span><br><span class="line">    data = pk.load(f)</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技巧 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 脚本工具 </tag>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>PyTorch常用训练框架</title>
       <link href="/2020/06/27/tech/PyTorch_%E5%B8%B8%E7%94%A8%E8%AE%AD%E7%BB%83%E6%A1%86%E6%9E%B6/"/>
       <url>/2020/06/27/tech/PyTorch_%E5%B8%B8%E7%94%A8%E8%AE%AD%E7%BB%83%E6%A1%86%E6%9E%B6/</url>
@@ -968,6 +1045,31 @@
             <tag> PyTorch </tag>
             
             <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>观佛记</title>
+      <link href="/2020/06/27/essay/tour/%E5%B3%A8%E7%9C%89%E8%A1%8C/"/>
+      <url>/2020/06/27/essay/tour/%E5%B3%A8%E7%9C%89%E8%A1%8C/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>    <div id="aplayer-WQprSgGQ" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="17685905" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"    ></div><p>虽说已经过了快两个月了，还是想记下那个不那么特殊的旅途.2020 年劳动节的峨眉山之行。虽说确实没有太多值得大书特书的细节，但就算当作流水账一样地记下来也是不错的。</p><a id="more"></a>  <p>事实上这个旅程是我从哈尔滨回来以后就一直在考虑的，然而最终因为疫情的原因没能在春节附近付诸实践，实在可惜。然情况总是纷繁复杂，居然到了五一节，我们这些学生还是滞留在自己的窝里面没有返校。五一节的几日长假不得不使人再次萌生了造访峨眉的想法，于是简单组织一通后和几个高中同学一同出发了。</p><p>一早起来，大概九点到了峨眉山脚。当时正逢疫情还在尾声的时候，每一个关卡都要检查健康码之类的东西。不过没有造成太大的阻碍，我们进山了。在山门口买了个舒适的竹杖。（这确实是救命的东西，不是打猴子，而是作为另一条腿。）一路上人不算太多，环境也很清幽。走走停停就能看见小亭子之类的东西。风景很难说是绝美，不过与城市的氛围自然还是迥异。最开始沿着山谷走，能一直看见下面流淌的透明小溪。这种景色总给我一种我曾经来过的感觉，可能是这样的风景实在是太多了吧。</p><p>一路上碰到一个山大王抢恰巧同行的一个小团队成员的小挎包。还恋恋不舍地跟了很久，但什么都没有抢到。大概是在仙峰寺附近，我的腿开始出现抽筋的症状，本来是一只腿，后来不幸另一条腿也开始抽筋。大概像是一条很粗的虫子在筋肉里穿梭的感觉。虽然感觉到疼但还是得往上走吧，一日登上峨眉算不上那么容易的事情。中间反复了几次，但通过休息和压腿算是稳定了下来。</p><p>然后仙峰寺之后是令人崩溃的上上下下。每一次站在一个山头，就看见另一个山头的小黑顶庙子，意识到那是下一个目的地的同时，得知需要先下山然后再爬到那里，是真的想骂上几句脏话，仿佛获得了前功尽弃的挫败感。这一路上的风景也相当的一般，没有想象中的那种壮美，也没有山大王之流的助兴。</p><p>到九岭冈的时候，整个队伍已经相当疲惫了。具体什么时候到那里的我已经记不确切了，但那个时候着实是怀着是否能在天黑前登上雷洞坪的担忧。后面我奇迹般地感觉自己的小腿抽筋消歇了，在钻天坡一路向上中居然越战越勇。大家根据情况不同，整个队伍也逐渐拉长。当时我在第二位，前面和后面的同学都不在了。我看见了洗象池的屋顶的时候，看见了一个宽阔的平台，旁边的围栏上立着两只互相搔毛的猴子。然后我看见了洗象池几个字和后面的一列陡峭的阶梯。我的两腿突然传来一阵剧痛，然后我就地跪了下去。据后面同学说，是听见了我的惨叫声。不过总之来到了一个新的节点。</p><p>后面的阎王坡实在震撼人心，长度和陡度都远超前面的钻天坡。不久后就走进了夜路，看见道路两旁藏青色的影子往前进。当到了宾馆吃上晚饭的时候已经是 10 点了。那个时候也没什么胃口，手机没电了，可能只是想坐一坐了吧。</p><p>中间的小卖部密集且良心。冰粉实在是天赐美物，中途还买了瓶可乐刺激刺激，但是也怀疑是这个导致体内酸性上升，以致抽筋。小竹棍也是必备之物，后面的路途可能都是靠支着这个小竹棍一点点往上挪的吧。</p><p>好歹，这是第一次完成了一个 41km 的旅途，这是我来没有想过的东西。我原来想峨眉可能就 20km 吧，我能行。但……总之算是问题不大。第二日起床去金顶看日出。日出确实是壮丽的。伴随着众多举着相机的人的欢呼声，像高邮咸鸭蛋那般的红色太阳从云层的那端慢慢露出来，透露出整个咸鸭蛋黄的金橙颜色，越发地诱人。然后天空呈现出一种绚丽的金色，最后慢慢变成普通闪耀着金光和大菩萨像一样颜色的太阳了。</p><p>我不太清楚自己是怎么爬上这个山的。我只记得我在路途的最后一程，我发自内心地想，如果这一路哪怕有一个可以放弃的地方，我可能就结束在那里了吧。往上走的原因只是既不能停下来，也不能回头罢了，和意志力什么的是无甚关联的东西。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随笔 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 行迹 </tag>
             
         </tags>
       
@@ -1005,58 +1107,6 @@
     
     
     <entry>
-      <title>Python常用系统操作及文件操作</title>
-      <link href="/2020/06/27/tech/Python/%E7%B3%BB%E7%BB%9F%E6%93%8D%E4%BD%9C/"/>
-      <url>/2020/06/27/tech/Python/%E7%B3%BB%E7%BB%9F%E6%93%8D%E4%BD%9C/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>    <div id="aplayer-PMbeNVxe" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="465149196" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"    ></div><p>在预处理文件以及训练模式时经常用到一个文件操作，这里稍加整理。</p><a id="more"></a>  <h2 id="os"><a href="#os" class="headerlink" title="os"></a>os</h2><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> shutil</span><br></pre></td></tr></table></figure><p>OS 操作很常用，用于获取文件夹之类的操作。主要使用<code>os</code>和<code>shutil</code>两个库文件。</p><h3 id="基本函数"><a href="#基本函数" class="headerlink" title="基本函数"></a>基本函数</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">os.path.exists(path)</span><br><span class="line">os.path.isdir(path)</span><br><span class="line">os.path.isfile(path)</span><br><span class="line">files = os.listdir(path)</span><br></pre></td></tr></table></figure><p>判断路径是否存在，是一个文件夹还是一个文件。对于一个文件夹可以继续使用 <code>listdir</code> 获得文件内容</p><h3 id="创建文件夹"><a href="#创建文件夹" class="headerlink" title="创建文件夹"></a>创建文件夹</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">mkdir</span><span class="params">(path)</span>:</span></span><br><span class="line"> </span><br><span class="line">    path=path.strip()</span><br><span class="line">    path=path.rstrip(<span class="string">"\\"</span>)</span><br><span class="line"> </span><br><span class="line">    isExists=os.path.exists(path)</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> isExists:</span><br><span class="line">        os.makedirs(path) </span><br><span class="line">        print(<span class="string">'OK!'</span>)</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(<span class="string">'Existed!)</span></span><br><span class="line"><span class="string">        return False</span></span><br></pre></td></tr></table></figure><h3 id="删除文件夹"><a href="#删除文件夹" class="headerlink" title="删除文件夹"></a>删除文件夹</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">os.remove(path)</span><br><span class="line">os.rmdir(path)        <span class="comment">#仅能删除空文件夹</span></span><br><span class="line">shutil.rmtree(path)   <span class="comment">#递归删除所有内容</span></span><br></pre></td></tr></table></figure><h3 id="重命名"><a href="#重命名" class="headerlink" title="重命名"></a>重命名</h3><p>对于文件夹和文件的操作方法是一样的。</p><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">os.rename(<span class="string">"test"</span>,<span class="string">"test1"</span>)    </span><br><span class="line">os.rename(<span class="string">"test.txt"</span>,<span class="string">"test1.txt"</span>)</span><br></pre></td></tr></table></figure><h3 id="复制和移动"><a href="#复制和移动" class="headerlink" title="复制和移动"></a>复制和移动</h3><p>需要使用 <code>shutil</code> 的库文件操作。</p><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">shutil.copyfile(<span class="string">"foo.txt"</span>,<span class="string">"bar.txt"</span>)  <span class="comment"># file only</span></span><br><span class="line">shutil.copytree(<span class="string">"foo"</span>,<span class="string">"bar"</span>)          <span class="comment"># dir only</span></span><br><span class="line">shutil.copy(<span class="string">"foo"</span>,<span class="string">"bar"</span>)              <span class="comment"># both</span></span><br><span class="line">shutil.move(<span class="string">"foo"</span>,<span class="string">"bar"</span>)</span><br></pre></td></tr></table></figure><ul><li>上述的文件的复制方法，存在覆盖能力。文件夹的复制方法则不允许在目标地址存在相应文件夹。</li><li>如果调用<code>.copy()</code>，输入为一个文件和一个文件夹，则会将文件复制入文件夹中。</li><li><code>.move()</code>细节和<code>.copy()</code>相同</li></ul><h2 id="文件读写操作"><a href="#文件读写操作" class="headerlink" title="文件读写操作"></a>文件读写操作</h2><h3 id="基本读写"><a href="#基本读写" class="headerlink" title="基本读写"></a>基本读写</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> open(path, <span class="string">'w'</span>, encoding = <span class="string">"utf-8"</span>) <span class="keyword">as</span> f:</span><br><span class="line">    f.write(<span class="string">'foobar!'</span>)</span><br><span class="line"><span class="keyword">with</span> open(path, <span class="string">'r'</span>, encoding = <span class="string">"utf-8"</span>) <span class="keyword">as</span> f:</span><br><span class="line">    lines = f.readlines()</span><br><span class="line">    <span class="keyword">for</span> line <span class="keyword">in</span> lines:</span><br><span class="line">        <span class="keyword">pass</span></span><br></pre></td></tr></table></figure><p>模式：</p><div class="table-container"><table><thead><tr><th>参数</th><th>效果</th></tr></thead><tbody><tr><td>w</td><td>写文件</td></tr><tr><td>r</td><td>读文件</td></tr><tr><td>a</td><td>追加文件</td></tr></tbody></table></div><h3 id="特殊：json"><a href="#特殊：json" class="headerlink" title="特殊：json"></a>特殊：json</h3><p>JSON 文件是常用的格式，为了方便存储字典型结构的最优选择。</p><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'dataset.json'</span>, <span class="string">'r'</span>) <span class="keyword">as</span> f:</span><br><span class="line">    data = json.load(f)</span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'dataset.json'</span>, <span class="string">'w'</span>) <span class="keyword">as</span> f:</span><br><span class="line">    json.dump(dataset, f)</span><br></pre></td></tr></table></figure><h3 id="特殊：pickle"><a href="#特殊：pickle" class="headerlink" title="特殊：pickle"></a>特殊：pickle</h3><p>pickle 常用来保存二进制数据结构。基本上是什么都能存。不过对于 PyTorch，还是建议使用 torch 自带的 save 函数，不然 torch 会报 warning。</p><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pickle <span class="keyword">as</span> pk</span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'dataset.pk'</span>, <span class="string">'wb'</span>) <span class="keyword">as</span> f:</span><br><span class="line">    pk.dump(data, f)</span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'dataset.pk'</span>, <span class="string">'rb'</span>) <span class="keyword">as</span> f:</span><br><span class="line">    data = pk.load(f)</span><br></pre></td></tr></table></figure>]]></content>
-      
-      
-      <categories>
-          
-          <category> 技巧 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 脚本工具 </tag>
-            
-            <tag> Python </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>观佛记</title>
-      <link href="/2020/06/27/essay/tour/%E5%B3%A8%E7%9C%89%E8%A1%8C/"/>
-      <url>/2020/06/27/essay/tour/%E5%B3%A8%E7%9C%89%E8%A1%8C/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>    <div id="aplayer-WQprSgGQ" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="17685905" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"    ></div><p>虽说已经过了快两个月了，还是想记下那个不那么特殊的旅途.2020 年劳动节的峨眉山之行。虽说确实没有太多值得大书特书的细节，但就算当作流水账一样地记下来也是不错的。</p><a id="more"></a>  <p>事实上这个旅程是我从哈尔滨回来以后就一直在考虑的，然而最终因为疫情的原因没能在春节附近付诸实践，实在可惜。然情况总是纷繁复杂，居然到了五一节，我们这些学生还是滞留在自己的窝里面没有返校。五一节的几日长假不得不使人再次萌生了造访峨眉的想法，于是简单组织一通后和几个高中同学一同出发了。</p><p>一早起来，大概九点到了峨眉山脚。当时正逢疫情还在尾声的时候，每一个关卡都要检查健康码之类的东西。不过没有造成太大的阻碍，我们进山了。在山门口买了个舒适的竹杖。（这确实是救命的东西，不是打猴子，而是作为另一条腿。）一路上人不算太多，环境也很清幽。走走停停就能看见小亭子之类的东西。风景很难说是绝美，不过与城市的氛围自然还是迥异。最开始沿着山谷走，能一直看见下面流淌的透明小溪。这种景色总给我一种我曾经来过的感觉，可能是这样的风景实在是太多了吧。</p><p>一路上碰到一个山大王抢恰巧同行的一个小团队成员的小挎包。还恋恋不舍地跟了很久，但什么都没有抢到。大概是在仙峰寺附近，我的腿开始出现抽筋的症状，本来是一只腿，后来不幸另一条腿也开始抽筋。大概像是一条很粗的虫子在筋肉里穿梭的感觉。虽然感觉到疼但还是得往上走吧，一日登上峨眉算不上那么容易的事情。中间反复了几次，但通过休息和压腿算是稳定了下来。</p><p>然后仙峰寺之后是令人崩溃的上上下下。每一次站在一个山头，就看见另一个山头的小黑顶庙子，意识到那是下一个目的地的同时，得知需要先下山然后再爬到那里，是真的想骂上几句脏话，仿佛获得了前功尽弃的挫败感。这一路上的风景也相当的一般，没有想象中的那种壮美，也没有山大王之流的助兴。</p><p>到九岭冈的时候，整个队伍已经相当疲惫了。具体什么时候到那里的我已经记不确切了，但那个时候着实是怀着是否能在天黑前登上雷洞坪的担忧。后面我奇迹般地感觉自己的小腿抽筋消歇了，在钻天坡一路向上中居然越战越勇。大家根据情况不同，整个队伍也逐渐拉长。当时我在第二位，前面和后面的同学都不在了。我看见了洗象池的屋顶的时候，看见了一个宽阔的平台，旁边的围栏上立着两只互相搔毛的猴子。然后我看见了洗象池几个字和后面的一列陡峭的阶梯。我的两腿突然传来一阵剧痛，然后我就地跪了下去。据后面同学说，是听见了我的惨叫声。不过总之来到了一个新的节点。</p><p>后面的阎王坡实在震撼人心，长度和陡度都远超前面的钻天坡。不久后就走进了夜路，看见道路两旁藏青色的影子往前进。当到了宾馆吃上晚饭的时候已经是 10 点了。那个时候也没什么胃口，手机没电了，可能只是想坐一坐了吧。</p><p>中间的小卖部密集且良心。冰粉实在是天赐美物，中途还买了瓶可乐刺激刺激，但是也怀疑是这个导致体内酸性上升，以致抽筋。小竹棍也是必备之物，后面的路途可能都是靠支着这个小竹棍一点点往上挪的吧。</p><p>好歹，这是第一次完成了一个 41km 的旅途，这是我来没有想过的东西。我原来想峨眉可能就 20km 吧，我能行。但……总之算是问题不大。第二日起床去金顶看日出。日出确实是壮丽的。伴随着众多举着相机的人的欢呼声，像高邮咸鸭蛋那般的红色太阳从云层的那端慢慢露出来，透露出整个咸鸭蛋黄的金橙颜色，越发地诱人。然后天空呈现出一种绚丽的金色，最后慢慢变成普通闪耀着金光和大菩萨像一样颜色的太阳了。</p><p>我不太清楚自己是怎么爬上这个山的。我只记得我在路途的最后一程，我发自内心地想，如果这一路哪怕有一个可以放弃的地方，我可能就结束在那里了吧。往上走的原因只是既不能停下来，也不能回头罢了，和意志力什么的是无甚关联的东西。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 随笔 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 行迹 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>PyTorch方法：DataSet</title>
       <link href="/2020/06/27/tech/PyTorch_DataSet/"/>
       <url>/2020/06/27/tech/PyTorch_DataSet/</url>
@@ -1076,31 +1126,6 @@
             <tag> PyTorch </tag>
             
             <tag> Python </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>深度学习的操作们</title>
-      <link href="/2020/06/27/scholar/DL_%E8%B0%83%E5%8F%82/"/>
-      <url>/2020/06/27/scholar/DL_%E8%B0%83%E5%8F%82/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>每一次深度模型调参都是让人头疼的东西，总感觉有很多玄学的东西能用，但事实上最后效果都不会太好。这里专门记录一些可能会有影响的调参方法。所以这是一个累积更新的文章。希望之后碰到新的方法和雷区能在这里记下，减少调试时间。</p><a id="more"></a>  <h2 id="有效措施"><a href="#有效措施" class="headerlink" title="有效措施"></a>有效措施</h2><h3 id="数据预处理"><a href="#数据预处理" class="headerlink" title="数据预处理"></a>数据预处理</h3><p>数据预处理的效果可能比模型的各种调参来得更加直接有效。对于 NLP 任务可能不那么明显，但是对于 CV 或者 DSP 任务却是立竿见影的。</p><h4 id="数据增广"><a href="#数据增广" class="headerlink" title="数据增广"></a>数据增广</h4><p>计算机视觉中常用的方法。基本是对于图片随机翻转、随机截取、添加高斯模糊、随机遮盖等等措施。其中随机截取和随机翻转是一般都有效的，随机遮盖等则不一定。数据增广可以在模型训练中完成，让模型实时更改数据集内容；也可以在训练前就完成增广；两种方法都用也没有问题。</p><p>对于图片的数据增广方法：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torchvision.transforms <span class="keyword">as</span> tfs</span><br><span class="line">transform = tfs.Compose([</span><br><span class="line">    tfs.Resize((<span class="number">256</span>, <span class="number">256</span>)),  <span class="comment"># 先调整图片大小至256x256</span></span><br><span class="line">    tfs.RandomCrop((<span class="number">224</span>, <span class="number">224</span>)),  <span class="comment"># 再随机裁剪到224x224</span></span><br><span class="line">    tfs.RandomHorizontalFlip(),  <span class="comment"># 随机的图像水平翻转，通俗讲就是图像的左右对调</span></span><br><span class="line">    tfs.RandomRotation(<span class="number">5</span>),</span><br><span class="line">    tfs.ToTensor(),</span><br><span class="line">    tfs.Normalize((<span class="number">0.485</span>, <span class="number">0.456</span>, <span class="number">0.406</span>), (<span class="number">0.229</span>, <span class="number">0.224</span>, <span class="number">0.2225</span>)),  <span class="comment"># 维度和图像的channel相关</span></span><br><span class="line">])</span><br></pre></td></tr></table></figure><p>调用时使用即可：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">img = transform(img)</span><br></pre></td></tr></table></figure></p><h4 id="数据标准化-归一化"><a href="#数据标准化-归一化" class="headerlink" title="数据标准化/归一化"></a>数据标准化/归一化</h4><p>即使是非常简单的数据标准化/归一化，就能取得显著的 performance 提高以及训练速度的大幅度提升。对于图像信息，可以使用灰度图均衡化，而对于数字信号或者其他信息，则可以使用 MinMax，标准化众多方法。这个对于模型训练速度的提升可能是数量级上。</p><p>但无论如何，数据标准化几乎应当是数据预处理的必要操作，绝对不能跳过。</p><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 直方图均衡化</span></span><br><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line">img = cv2.equalizeHist(img)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 标准化 - 对于一维数据</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">std</span><span class="params">(data)</span>:</span></span><br><span class="line">    mu = np.mean(data)</span><br><span class="line">    sigma = np.std(data)</span><br><span class="line">    <span class="keyword">return</span> (data - mu) / sigma</span><br></pre></td></tr></table></figure><h3 id="训练"><a href="#训练" class="headerlink" title="训练"></a>训练</h3><h4 id="损失函数权重"><a href="#损失函数权重" class="headerlink" title="损失函数权重"></a>损失函数权重</h4><p>对于普通的损失函数，对于不同的类加以相同的权进行处理。但是对于类分别不均的训练集/测试集，可以轻微调整模型的损失函数权重，一般权重添加方法是按照训练集的比例强行加权。一般这样就能获得略好的效果。但是还有一定的调整空间。事实上使用这个方法对于一些数据分布不均的方法有非常明显的效果。不过如果实在分布不均的话，可以考虑数据预处理方法解决。</p><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">weight = torch.Tensor([<span class="number">1</span>, <span class="number">0.8</span>])</span><br><span class="line">lossfun = nn.CrossEntropyLoss(weight = weight)</span><br></pre></td></tr></table></figure><p>如果使用 cuda 训练，还应该申明<code>.cuda()</code>。</p><h4 id="学习率衰减"><a href="#学习率衰减" class="headerlink" title="学习率衰减"></a>学习率衰减</h4><p>原来习惯性用 Adam 也就没有再关心过学习率的问题，但事实上学习率仍然是有影响的。使用过小的学习率前期的训练时间过长而且容易进入一个不太好的局部最优解，相反使用大的学习率在前期能够势如破竹。（甚至是数量级的提升）但是训练到后期的模型 performan 却需要更小的学习率，所以这里引入学习率衰减的方法。</p><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">adjust_learning_rate</span><span class="params">(optimizer, epoch)</span>:</span></span><br><span class="line">    lr = <span class="number">1e-4</span> * (<span class="number">0.4</span> ** (epoch // <span class="number">8</span>))</span><br><span class="line">    <span class="keyword">for</span> param_group <span class="keyword">in</span> optimizer.param_groups:</span><br><span class="line">        param_group[<span class="string">'lr'</span>] = lr</span><br><span class="line">adjust_learning_rate(optimizer, epoch)</span><br></pre></td></tr></table></figure><p>传入的 optimizer 参数就是 PyTorch 的模型。对于 Adam 模型，建议使用 $1e^{-4}$ 作为起始训练速率。</p><h2 id="不稳定措施"><a href="#不稳定措施" class="headerlink" title="不稳定措施"></a>不稳定措施</h2><h3 id="添加模型的全连接层"><a href="#添加模型的全连接层" class="headerlink" title="添加模型的全连接层"></a>添加模型的全连接层</h3><p>添加全连接层会大幅度增加模型的复杂度以及参数量，强制减低模型的训练速度，但而提高模型的过拟合能力。所以增加全连接层方法在数据量不足以支撑的情况下是绝对不推荐的。但是有的时候能发挥一定的作用。</p><h3 id="Dropout"><a href="#Dropout" class="headerlink" title="Dropout"></a>Dropout</h3><p>Dropout 不是万能的方法。例如对于最后的分类器叠加 Dropout 反而会使模型的表现变得滑稽。Dropout 的添加是需要通过反复实验的。不过建议在模型的一开始不要使用 Dropout，因为模型自身的能力可能就不够，不能够很好地拟合训练数据。而且增加 Dropout 增加了训练时间，对于判断模型的强度也是不利的。在实验的最后发现过拟合严重可以考虑尝试使用 Dropout 方法。</p><h3 id="Multi-task"><a href="#Multi-task" class="headerlink" title="Multi-task"></a>Multi-task</h3><p>这是一个很不确定的东西。Multi-task 的效果随着设计的多任务而变化。事实上，在我使用 Multi-task 的情况下，几乎都没有得到明显的提升，有的时候甚至会拖后腿使模型的能力下降。所以 Multi-task 是需要仔细思考后使用的。</p><h3 id="加载预训数据"><a href="#加载预训数据" class="headerlink" title="加载预训数据"></a>加载预训数据</h3><p>对于 NLP 任务，使用预训参数是必要的，特别是对于 BERT 等模型，即使固定参数，只训练后面的部分也能获得很好的效果。但是对于 CV 任务这个效果却不是一定的。例如在 COVID-19 分类任务中，我使用了 ResNet18 作为一个模型，并加载了 PyTorch 的预训结果，获得了训练速度的显著提升；然而在语谱图分类时，使用预训的结果并没有明显的优势。</p><p>所以模型的训练对象和预训的数据集应该有一定的共同之处时才能够发挥作用。语谱图是完全和 ImageNet 不同的东西，所以不能发挥作用也是在预期之中的。</p><h2 id="基本无效措施"><a href="#基本无效措施" class="headerlink" title="基本无效措施"></a>基本无效措施</h2>]]></content>
-      
-      
-      <categories>
-          
-          <category> 学术 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> ML </tag>
             
         </tags>
       
@@ -1442,11 +1467,11 @@
     
     
     <entry>
-      <title>LaTeX在Hexo中的渲染</title>
-      <link href="/2020/05/03/tech/LaTeX/%E5%9C%A8Hexo%E4%B8%8B%E7%9A%84%E6%B8%B2%E6%9F%93/"/>
-      <url>/2020/05/03/tech/LaTeX/%E5%9C%A8Hexo%E4%B8%8B%E7%9A%84%E6%B8%B2%E6%9F%93/</url>
+      <title>LaTeX常用语法</title>
+      <link href="/2020/05/03/tech/LaTeX/%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/"/>
+      <url>/2020/05/03/tech/LaTeX/%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>该段落处理$\LaTeX$无法顺利在 Hexo 中渲染的问题。以下为上一次尝试且成功的步骤。<br><a id="more"></a>  </p><p>Hexo 默认的渲染引擎为 hexo-renderer-marked，这里将其更换为 hexo-renderer-kramed，该引擎在前者的基础上修复了一些 bug，具体操作：<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">uninstall</span> hexo-renderer-marked <span class="comment">--save</span></span><br><span class="line">npm <span class="keyword">install</span> hexo-renderer-kramed <span class="comment">--save</span></span><br></pre></td></tr></table></figure></p><p>修改 marked.js。具体修改方式，用编辑器打开 marked.js（在./node_modules/kramed/lib/rules/inline.js 中）<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">escape: /^\\([<span class="string">\\`*&#123;&#125;\[\</span>](<span class="link"></span>)# +\-.!_&gt;])/, //替换掉</span><br><span class="line">escape: /^\\([<span class="string">`*\[\</span>](<span class="link"></span>)# +\-.!_&gt;])/,</span><br></pre></td></tr></table></figure></p><p>同时<br><figure class="highlight taggerscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">em: /^<span class="symbol">\b</span>_((?:[^_]|__)+?)_<span class="symbol">\b</span>|^<span class="symbol">\*</span>((?:<span class="symbol">\*</span><span class="symbol">\*</span>|[<span class="symbol">\s</span><span class="symbol">\S</span>])+?)<span class="symbol">\*</span>(?!<span class="symbol">\*</span>)/,  //替换掉</span><br><span class="line">em:/^<span class="symbol">\*</span>((?:<span class="symbol">\*</span><span class="symbol">\*</span>|[<span class="symbol">\s</span><span class="symbol">\S</span>])+?)<span class="symbol">\*</span>(?!<span class="symbol">\*</span>)/,</span><br></pre></td></tr></table></figure><br>这样应该就能成功了。</p>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>因为最近一段时间有使用$\LaTeX$写公式的需要，所以专门在这里整理一些常用的公式写法，防止后面反复查询。<br><a id="more"></a>  </p><h3 id="常用符号"><a href="#常用符号" class="headerlink" title="常用符号"></a>常用符号</h3><ul><li><code>\infty</code>: $\infty$</li><li><code>\ge</code>: $\ge$</li><li><code>\le</code>: $\le$</li><li><code>\pm</code>: $\pm$</li><li><code>\int</code>: $\int$</li><li><code>\prod</code>: $\prod$</li><li><code>\arg\mathop{\max}_{\theta}</code>: $\arg\mathop{\max}_{\theta}$</li></ul><h3 id="常用等式"><a href="#常用等式" class="headerlink" title="常用等式"></a>常用等式</h3><p>连等式：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">\begin&#123;aligned&#125;</span><br><span class="line">    A &amp;&#x3D; B+C\\</span><br><span class="line">    &amp;&#x3D;C+D\\</span><br><span class="line">    &amp;&#x3D;D+F</span><br><span class="line">\end&#123;aligned&#125;</span><br></pre></td></tr></table></figure></p><script type="math/tex; mode=display">    \begin{aligned}        A &= B+C\\        &=C+D\\        &=D+F    \end{aligned}</script><hr><p>大括号等式：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">X_p(w)&#x3D;\left\&#123;</span><br><span class="line">\begin&#123;aligned&#125;</span><br><span class="line">    \frac&#123;1&#125;&#123;2j&#125;,~~~w&#x3D;\frac&#123;\pi&#125;&#123;2&#125; \\</span><br><span class="line">    -\frac&#123;1&#125;&#123;2j&#125;,~~~w&#x3D;-\frac&#123;\pi&#125;&#123;2&#125; \\</span><br><span class="line">    0, ~~~otherwise</span><br><span class="line">    \end&#123;aligned&#125;</span><br><span class="line">\right.</span><br></pre></td></tr></table></figure></p><script type="math/tex; mode=display">    f(x)=    \begin{cases}        0& \text{x=0}\\        1& \text{x!=0}    \end{cases}</script><p>$$</p>]]></content>
       
       
       <categories>
@@ -1467,11 +1492,11 @@
     
     
     <entry>
-      <title>LaTeX常用语法</title>
-      <link href="/2020/05/03/tech/LaTeX/%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/"/>
-      <url>/2020/05/03/tech/LaTeX/%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/</url>
+      <title>LaTeX在Hexo中的渲染</title>
+      <link href="/2020/05/03/tech/LaTeX/%E5%9C%A8Hexo%E4%B8%8B%E7%9A%84%E6%B8%B2%E6%9F%93/"/>
+      <url>/2020/05/03/tech/LaTeX/%E5%9C%A8Hexo%E4%B8%8B%E7%9A%84%E6%B8%B2%E6%9F%93/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>因为最近一段时间有使用$\LaTeX$写公式的需要，所以专门在这里整理一些常用的公式写法，防止后面反复查询。<br><a id="more"></a>  </p><h3 id="常用符号"><a href="#常用符号" class="headerlink" title="常用符号"></a>常用符号</h3><ul><li><code>\infty</code>: $\infty$</li><li><code>\ge</code>: $\ge$</li><li><code>\le</code>: $\le$</li><li><code>\pm</code>: $\pm$</li><li><code>\int</code>: $\int$</li><li><code>\prod</code>: $\prod$</li><li><code>\arg\mathop{\max}_{\theta}</code>: $\arg\mathop{\max}_{\theta}$</li></ul><h3 id="常用等式"><a href="#常用等式" class="headerlink" title="常用等式"></a>常用等式</h3><p>连等式：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">\begin&#123;aligned&#125;</span><br><span class="line">    A &amp;&#x3D; B+C\\</span><br><span class="line">    &amp;&#x3D;C+D\\</span><br><span class="line">    &amp;&#x3D;D+F</span><br><span class="line">\end&#123;aligned&#125;</span><br></pre></td></tr></table></figure></p><script type="math/tex; mode=display">    \begin{aligned}        A &= B+C\\        &=C+D\\        &=D+F    \end{aligned}</script><hr><p>大括号等式：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">X_p(w)&#x3D;\left\&#123;</span><br><span class="line">\begin&#123;aligned&#125;</span><br><span class="line">    \frac&#123;1&#125;&#123;2j&#125;,~~~w&#x3D;\frac&#123;\pi&#125;&#123;2&#125; \\</span><br><span class="line">    -\frac&#123;1&#125;&#123;2j&#125;,~~~w&#x3D;-\frac&#123;\pi&#125;&#123;2&#125; \\</span><br><span class="line">    0, ~~~otherwise</span><br><span class="line">    \end&#123;aligned&#125;</span><br><span class="line">\right.</span><br></pre></td></tr></table></figure></p><script type="math/tex; mode=display">    f(x)=    \begin{cases}        0& \text{x=0}\\        1& \text{x!=0}    \end{cases}</script><p>$$</p>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>该段落处理$\LaTeX$无法顺利在 Hexo 中渲染的问题。以下为上一次尝试且成功的步骤。<br><a id="more"></a>  </p><p>Hexo 默认的渲染引擎为 hexo-renderer-marked，这里将其更换为 hexo-renderer-kramed，该引擎在前者的基础上修复了一些 bug，具体操作：<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">uninstall</span> hexo-renderer-marked <span class="comment">--save</span></span><br><span class="line">npm <span class="keyword">install</span> hexo-renderer-kramed <span class="comment">--save</span></span><br></pre></td></tr></table></figure></p><p>修改 marked.js。具体修改方式，用编辑器打开 marked.js（在./node_modules/kramed/lib/rules/inline.js 中）<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">escape: /^\\([<span class="string">\\`*&#123;&#125;\[\</span>](<span class="link"></span>)# +\-.!_&gt;])/, //替换掉</span><br><span class="line">escape: /^\\([<span class="string">`*\[\</span>](<span class="link"></span>)# +\-.!_&gt;])/,</span><br></pre></td></tr></table></figure></p><p>同时<br><figure class="highlight taggerscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">em: /^<span class="symbol">\b</span>_((?:[^_]|__)+?)_<span class="symbol">\b</span>|^<span class="symbol">\*</span>((?:<span class="symbol">\*</span><span class="symbol">\*</span>|[<span class="symbol">\s</span><span class="symbol">\S</span>])+?)<span class="symbol">\*</span>(?!<span class="symbol">\*</span>)/,  //替换掉</span><br><span class="line">em:/^<span class="symbol">\*</span>((?:<span class="symbol">\*</span><span class="symbol">\*</span>|[<span class="symbol">\s</span><span class="symbol">\S</span>])+?)<span class="symbol">\*</span>(?!<span class="symbol">\*</span>)/,</span><br></pre></td></tr></table></figure><br>这样应该就能成功了。</p>]]></content>
       
       
       <categories>
