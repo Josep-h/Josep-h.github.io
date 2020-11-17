@@ -6,7 +6,7 @@
   <link href="https://josep-h.gitee.io/atom.xml" rel="self"/>
   
   <link href="https://josep-h.gitee.io/"/>
-  <updated>2020-11-16T14:42:47.000Z</updated>
+  <updated>2020-11-17T04:21:52.000Z</updated>
   <id>https://josep-h.gitee.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Out of the Rolling Ocean the Crowd</title>
+    <link href="https://josep-h.gitee.io/2020/11/17/essay/poems/From%20the%20rolling%20ocean/"/>
+    <id>https://josep-h.gitee.io/2020/11/17/essay/poems/From%20the%20rolling%20ocean/</id>
+    <published>2020-11-17T04:21:52.000Z</published>
+    <updated>2020-11-17T04:21:52.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>一位友人突然由于翻译课找到我，邀请我一起翻译佛洛斯特的诗歌<em>Stopping By Woods on a Snowy Evening</em>，想起了早些时候翻译的这一首惠特曼的诗。所以放一个原文在这里当作一个记录，翻译稿已经不太找的到了。欢迎有兴趣的读者自行尝试翻译。</p><a id="more"></a>  <blockquote><p>Out of the Rolling Ocean the Crowd<br><strong>Walt Whitman</strong><br>Out of the rolling ocean, the crowd, came a drop gently to me,<br>Whispering I love you, before long I die,<br>I have travel’d a long way, merely to look on you to touch you,<br>For I could not die till I once look’d on you,<br>For I fear’d I might afterward lose you.</p><p>Now we have met, we have look’d, we are safe,<br>Return in peace to the ocean my love,<br>I too am part of that ocean, my love, we are not so much separated,<br>Behold the great rondure, the cohesion of all, how perfect!<br>But as for me, for you, the irresistible sea is to separate us,<br>As for an hour carrying us diverse, yet cannot carry us diverse forever;<br>Be not impatient—a little space—know you I salute the air, the ocean and the land,<br>Every day at sundown for your dear sake my love.</p></blockquote><p>这首诗原文很清晰，但恐怕翻译起来难度不小。就以最后一句为例，实在是很难搞定这种英文表达带来的奇妙感受。Anyway，我先尝试完成佛洛斯特的那首小诗吧。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;一位友人突然由于翻译课找到我，邀请我一起翻译佛洛斯特的诗歌&lt;em&gt;Stopping By Woods on a Snowy Evening&lt;/em&gt;，想起了早些时候翻译的这一首惠特曼的诗。所以放一个原文在这里当作一个记录，翻译稿已经不太找的到了。欢迎有兴趣的读者自行尝试翻译。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="随笔" scheme="https://josep-h.gitee.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+    <category term="诗歌？" scheme="https://josep-h.gitee.io/tags/%E8%AF%97%E6%AD%8C%EF%BC%9F/"/>
+    
+  </entry>
   
   <entry>
     <title>被打断的马七</title>
@@ -482,8 +503,8 @@
   
   <entry>
     <title>野士</title>
-    <link href="https://josep-h.gitee.io/2020/08/22/essay/%E9%87%8E%E5%A3%AB/"/>
-    <id>https://josep-h.gitee.io/2020/08/22/essay/%E9%87%8E%E5%A3%AB/</id>
+    <link href="https://josep-h.gitee.io/2020/08/22/essay/poems/%E9%87%8E%E5%A3%AB/"/>
+    <id>https://josep-h.gitee.io/2020/08/22/essay/poems/%E9%87%8E%E5%A3%AB/</id>
     <published>2020-08-22T05:53:09.000Z</published>
     <updated>2020-08-22T05:53:09.000Z</updated>
     
@@ -722,29 +743,6 @@
   </entry>
   
   <entry>
-    <title>Transformers使用</title>
-    <link href="https://josep-h.gitee.io/2020/07/04/tech/Huggingface/"/>
-    <id>https://josep-h.gitee.io/2020/07/04/tech/Huggingface/</id>
-    <published>2020-07-04T05:53:09.000Z</published>
-    <updated>2020-07-04T05:53:09.000Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>本地使用 Huggingface 的 transformer 挺麻烦的，可能之后还会碰到。这里做一个记录。</p><a id="more"></a>  <h2 id="模型下载"><a href="#模型下载" class="headerlink" title="模型下载"></a>模型下载</h2><p>模型如果标注了<code>from_pretrain(&#39;&#39;)</code>之类的，则需要加载模型。而不幸的是，官方下载模型的渠道很慢，需要使用离线下载方法。下述以 BERT 作为例子，下载步骤如下：</p><ol><li>进入链接，找到<a href="https://huggingface.co/models" target="_blank" rel="noopener">模型</a>的位置。</li><li>找到特殊的模型，进入<a href="https://huggingface.co/bert-base-uncased" target="_blank" rel="noopener">界面</a>。</li><li>在模型下方找到<a href="https://huggingface.co/bert-base-uncased#list-files" target="_blank" rel="noopener">List all files in model</a>。</li><li>选择其中的’config.json; pytorch_model.bin; vocab.txt’下载到同一个文件夹。</li></ol><h2 id="模型载入"><a href="#模型载入" class="headerlink" title="模型载入"></a>模型载入</h2><p>在开始载入以前，需要将上述下载文件放置到一个文件夹下。</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">\<span class="selector-tag">-</span> <span class="selector-tag">bert-uncased</span></span><br><span class="line">    <span class="selector-tag">config</span><span class="selector-class">.json</span></span><br><span class="line">    <span class="selector-tag">pytorch_model</span><span class="selector-class">.bin</span></span><br><span class="line">    <span class="selector-tag">vocab</span><span class="selector-class">.txt</span></span><br><span class="line"><span class="selector-tag">train</span><span class="selector-class">.py</span></span><br></pre></td></tr></table></figure><p>在 <code>train.py</code> 中的代码：</p><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> transformers <span class="keyword">import</span> BertTokenizer, BertModel</span><br><span class="line"></span><br><span class="line">path = <span class="string">'D:/LAB/LAB-last/lex-dis/cont-cont/bert-uncased'</span></span><br><span class="line">tokenizer = BertTokenizer.from_pretrained(path)</span><br><span class="line">model = BertModel.from_pretrained(path)</span><br></pre></td></tr></table></figure><p>这里模型载入即结束。使用相对路径不知为何不能成功，需要使用全地址。</p><h2 id="模型使用"><a href="#模型使用" class="headerlink" title="模型使用"></a>模型使用</h2><p>tokenizers 和 model 的使用这里暂时搁置。</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;本地使用 Huggingface 的 transformer 挺麻烦的，可能之后还会碰到。这里做一个记录。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="技巧" scheme="https://josep-h.gitee.io/categories/%E6%8A%80%E5%B7%A7/"/>
-    
-    
-    <category term="PyTorch" scheme="https://josep-h.gitee.io/tags/PyTorch/"/>
-    
-    <category term="NLP" scheme="https://josep-h.gitee.io/tags/NLP/"/>
-    
-  </entry>
-  
-  <entry>
     <title>VSCode连接Python调试</title>
     <link href="https://josep-h.gitee.io/2020/07/04/tech/VSC/vscode%E8%BF%9E%E6%8E%A5python/"/>
     <id>https://josep-h.gitee.io/2020/07/04/tech/VSC/vscode%E8%BF%9E%E6%8E%A5python/</id>
@@ -789,6 +787,29 @@
     
     
     <category term="Hexo" scheme="https://josep-h.gitee.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Transformers使用</title>
+    <link href="https://josep-h.gitee.io/2020/07/04/tech/Huggingface/"/>
+    <id>https://josep-h.gitee.io/2020/07/04/tech/Huggingface/</id>
+    <published>2020-07-04T05:53:09.000Z</published>
+    <updated>2020-07-04T05:53:09.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>本地使用 Huggingface 的 transformer 挺麻烦的，可能之后还会碰到。这里做一个记录。</p><a id="more"></a>  <h2 id="模型下载"><a href="#模型下载" class="headerlink" title="模型下载"></a>模型下载</h2><p>模型如果标注了<code>from_pretrain(&#39;&#39;)</code>之类的，则需要加载模型。而不幸的是，官方下载模型的渠道很慢，需要使用离线下载方法。下述以 BERT 作为例子，下载步骤如下：</p><ol><li>进入链接，找到<a href="https://huggingface.co/models" target="_blank" rel="noopener">模型</a>的位置。</li><li>找到特殊的模型，进入<a href="https://huggingface.co/bert-base-uncased" target="_blank" rel="noopener">界面</a>。</li><li>在模型下方找到<a href="https://huggingface.co/bert-base-uncased#list-files" target="_blank" rel="noopener">List all files in model</a>。</li><li>选择其中的’config.json; pytorch_model.bin; vocab.txt’下载到同一个文件夹。</li></ol><h2 id="模型载入"><a href="#模型载入" class="headerlink" title="模型载入"></a>模型载入</h2><p>在开始载入以前，需要将上述下载文件放置到一个文件夹下。</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">\<span class="selector-tag">-</span> <span class="selector-tag">bert-uncased</span></span><br><span class="line">    <span class="selector-tag">config</span><span class="selector-class">.json</span></span><br><span class="line">    <span class="selector-tag">pytorch_model</span><span class="selector-class">.bin</span></span><br><span class="line">    <span class="selector-tag">vocab</span><span class="selector-class">.txt</span></span><br><span class="line"><span class="selector-tag">train</span><span class="selector-class">.py</span></span><br></pre></td></tr></table></figure><p>在 <code>train.py</code> 中的代码：</p><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> transformers <span class="keyword">import</span> BertTokenizer, BertModel</span><br><span class="line"></span><br><span class="line">path = <span class="string">'D:/LAB/LAB-last/lex-dis/cont-cont/bert-uncased'</span></span><br><span class="line">tokenizer = BertTokenizer.from_pretrained(path)</span><br><span class="line">model = BertModel.from_pretrained(path)</span><br></pre></td></tr></table></figure><p>这里模型载入即结束。使用相对路径不知为何不能成功，需要使用全地址。</p><h2 id="模型使用"><a href="#模型使用" class="headerlink" title="模型使用"></a>模型使用</h2><p>tokenizers 和 model 的使用这里暂时搁置。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;本地使用 Huggingface 的 transformer 挺麻烦的，可能之后还会碰到。这里做一个记录。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技巧" scheme="https://josep-h.gitee.io/categories/%E6%8A%80%E5%B7%A7/"/>
+    
+    
+    <category term="PyTorch" scheme="https://josep-h.gitee.io/tags/PyTorch/"/>
+    
+    <category term="NLP" scheme="https://josep-h.gitee.io/tags/NLP/"/>
     
   </entry>
   
@@ -886,6 +907,55 @@
   </entry>
   
   <entry>
+    <title>CV：深度卷积神经网络模型及调参</title>
+    <link href="https://josep-h.gitee.io/2020/06/27/scholar/DL_DCNN/"/>
+    <id>https://josep-h.gitee.io/2020/06/27/scholar/DL_DCNN/</id>
+    <published>2020-06-27T05:53:09.000Z</published>
+    <updated>2020-06-27T05:53:09.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>因为连续做了两个使用 CNN 网络的模型训练，所以这里单独开一个记录 CNN 调参的心路历程。</p><a id="more"></a>  <h2 id="模型"><a href="#模型" class="headerlink" title="模型"></a>模型</h2><p>经过众多测试，得到的通用模型如下。基本思想是深的神经网络以及小的卷积核，并且卷积核的 channel 逐渐增加的机制。</p><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">SuperNaiveModel</span><span class="params">(nn.Module)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        super(SuperNaiveModel, self).__init__()</span><br><span class="line">        self.conv0 = nn.Sequential(</span><br><span class="line">            torch.nn.Conv2d(<span class="number">1</span>, <span class="number">64</span>, kernel_size=<span class="number">5</span>, stride=<span class="number">2</span>, padding=<span class="number">3</span>),</span><br><span class="line">            torch.nn.BatchNorm2d(<span class="number">64</span>, momentum=<span class="number">0.1</span>),            </span><br><span class="line">            torch.nn.ReLU(),</span><br><span class="line">        )</span><br><span class="line">        self.conv1 = torch.nn.Sequential(</span><br><span class="line">            torch.nn.Conv2d(<span class="number">64</span>, <span class="number">128</span>, kernel_size=<span class="number">3</span>, stride=<span class="number">1</span>, padding=<span class="number">1</span>),</span><br><span class="line">            torch.nn.ReLU(),</span><br><span class="line">            torch.nn.Conv2d(<span class="number">128</span>, <span class="number">128</span>, kernel_size=<span class="number">3</span>, stride=<span class="number">1</span>, padding=<span class="number">1</span>),</span><br><span class="line">            torch.nn.ReLU(),</span><br><span class="line">            torch.nn.MaxPool2d(stride=<span class="number">2</span>, kernel_size=<span class="number">2</span>))</span><br><span class="line">        self.conv2 = torch.nn.Sequential(</span><br><span class="line">            torch.nn.Conv2d(<span class="number">128</span>, <span class="number">256</span>, kernel_size=<span class="number">3</span>, stride=<span class="number">1</span>, padding=<span class="number">1</span>),</span><br><span class="line">            torch.nn.ReLU(),            </span><br><span class="line">            torch.nn.Conv2d(<span class="number">256</span>, <span class="number">256</span>, kernel_size=<span class="number">3</span>, stride=<span class="number">1</span>, padding=<span class="number">1</span>),</span><br><span class="line">            torch.nn.ReLU(),</span><br><span class="line">            torch.nn.MaxPool2d(stride=<span class="number">2</span>, kernel_size=<span class="number">2</span>))</span><br><span class="line">        self.conv20 = torch.nn.Sequential(</span><br><span class="line">            torch.nn.Conv2d(<span class="number">256</span>, <span class="number">256</span>, kernel_size=<span class="number">3</span>, stride=<span class="number">1</span>, padding=<span class="number">1</span>),</span><br><span class="line">            torch.nn.ReLU(),            </span><br><span class="line">            torch.nn.Conv2d(<span class="number">256</span>, <span class="number">256</span>, kernel_size=<span class="number">3</span>, stride=<span class="number">1</span>, padding=<span class="number">1</span>),</span><br><span class="line">            torch.nn.ReLU(),</span><br><span class="line">            torch.nn.MaxPool2d(stride=<span class="number">2</span>, kernel_size=<span class="number">2</span>))</span><br><span class="line">        self.conv3=torch.nn.Sequential(</span><br><span class="line">            torch.nn.Conv2d(<span class="number">256</span>, <span class="number">512</span>, kernel_size=<span class="number">3</span>, stride=<span class="number">1</span>, padding=<span class="number">1</span>),</span><br><span class="line">            torch.nn.BatchNorm2d(<span class="number">512</span>, momentum=<span class="number">0.1</span>),            </span><br><span class="line">            torch.nn.ReLU(),            </span><br><span class="line">            torch.nn.Conv2d(<span class="number">512</span>, <span class="number">512</span>, kernel_size=<span class="number">3</span>, stride=<span class="number">1</span>, padding=<span class="number">1</span>),</span><br><span class="line">            torch.nn.BatchNorm2d(<span class="number">512</span>, momentum=<span class="number">0.1</span>),</span><br><span class="line">            torch.nn.ReLU(),</span><br><span class="line">            torch.nn.MaxPool2d(stride=<span class="number">2</span>, kernel_size=<span class="number">2</span>))</span><br><span class="line">        self.dense = torch.nn.Sequential(</span><br><span class="line">            torch.nn.Linear(<span class="number">512</span> * <span class="number">4</span> * <span class="number">4</span>, <span class="number">20</span>),</span><br><span class="line">            nn.LogSoftmax(dim=<span class="number">1</span>)</span><br><span class="line">            )</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">forward</span><span class="params">(self, x)</span>:</span></span><br><span class="line">        x = x.reshape(x.shape[<span class="number">0</span>], <span class="number">1</span>, <span class="number">128</span>, <span class="number">128</span>).float()</span><br><span class="line">        x = self.conv0(x)</span><br><span class="line">        x = self.conv1(x)</span><br><span class="line">        x = self.conv2(x)</span><br><span class="line">        x = self.conv20(x)</span><br><span class="line">        x = self.conv3(x)</span><br><span class="line">        x = x.view(x.shape[<span class="number">0</span>], <span class="number">512</span> * <span class="number">4</span> * <span class="number">4</span>)</span><br><span class="line">        x = self.dense(x)</span><br><span class="line">        <span class="keyword">return</span> x1</span><br></pre></td></tr></table></figure><h2 id="设定"><a href="#设定" class="headerlink" title="设定"></a>设定</h2><p>由于训练资源不够，所以使用一个 5x5 的卷积核代替了应有的两个 3x3 卷积核链接的效果。根据 VGG，<strong>连续使用两个 3x3</strong>可能效果会好一些。</p><p>Batchnorm 是一个玄学的东西，它的功能并不如预期一样稳定，并且没有必要在没一个网络后都接一个 BN 层。事实上，根据实验，在模型的最开始和最后一层添加 BN 层的效果是明显的。ReLU 层作为非线性化的方法，几乎是必须的。</p><p>此外，过多的全连接层是不利的，每多增一个全连接层会对模型造成一定的影响。预测的原因是由于数据量不够支撑全连接层的泛化性，导致容易过拟合，泛化性差，反而不如一层全连接。所以全连接层越多越好不是绝对的。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;因为连续做了两个使用 CNN 网络的模型训练，所以这里单独开一个记录 CNN 调参的心路历程。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="学术" scheme="https://josep-h.gitee.io/categories/%E5%AD%A6%E6%9C%AF/"/>
+    
+    
+    <category term="ML" scheme="https://josep-h.gitee.io/tags/ML/"/>
+    
+    <category term="CV" scheme="https://josep-h.gitee.io/tags/CV/"/>
+    
+    <category term="PyTorch" scheme="https://josep-h.gitee.io/tags/PyTorch/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>观佛记</title>
+    <link href="https://josep-h.gitee.io/2020/06/27/essay/tour/%E5%B3%A8%E7%9C%89%E8%A1%8C/"/>
+    <id>https://josep-h.gitee.io/2020/06/27/essay/tour/%E5%B3%A8%E7%9C%89%E8%A1%8C/</id>
+    <published>2020-06-27T05:53:09.000Z</published>
+    <updated>2020-06-27T05:53:09.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>    <div id="aplayer-WQprSgGQ" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="17685905" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"    ></div><p>虽说已经过了快两个月了，还是想记下那个不那么特殊的旅途.2020 年劳动节的峨眉山之行。虽说确实没有太多值得大书特书的细节，但就算当作流水账一样地记下来也是不错的。</p><a id="more"></a>  <p>事实上这个旅程是我从哈尔滨回来以后就一直在考虑的，然而最终因为疫情的原因没能在春节附近付诸实践，实在可惜。然情况总是纷繁复杂，居然到了五一节，我们这些学生还是滞留在自己的窝里面没有返校。五一节的几日长假不得不使人再次萌生了造访峨眉的想法，于是简单组织一通后和几个高中同学一同出发了。</p><p>一早起来，大概九点到了峨眉山脚。当时正逢疫情还在尾声的时候，每一个关卡都要检查健康码之类的东西。不过没有造成太大的阻碍，我们进山了。在山门口买了个舒适的竹杖。（这确实是救命的东西，不是打猴子，而是作为另一条腿。）一路上人不算太多，环境也很清幽。走走停停就能看见小亭子之类的东西。风景很难说是绝美，不过与城市的氛围自然还是迥异。最开始沿着山谷走，能一直看见下面流淌的透明小溪。这种景色总给我一种我曾经来过的感觉，可能是这样的风景实在是太多了吧。</p><p>一路上碰到一个山大王抢恰巧同行的一个小团队成员的小挎包。还恋恋不舍地跟了很久，但什么都没有抢到。大概是在仙峰寺附近，我的腿开始出现抽筋的症状，本来是一只腿，后来不幸另一条腿也开始抽筋。大概像是一条很粗的虫子在筋肉里穿梭的感觉。虽然感觉到疼但还是得往上走吧，一日登上峨眉算不上那么容易的事情。中间反复了几次，但通过休息和压腿算是稳定了下来。</p><p>然后仙峰寺之后是令人崩溃的上上下下。每一次站在一个山头，就看见另一个山头的小黑顶庙子，意识到那是下一个目的地的同时，得知需要先下山然后再爬到那里，是真的想骂上几句脏话，仿佛获得了前功尽弃的挫败感。这一路上的风景也相当的一般，没有想象中的那种壮美，也没有山大王之流的助兴。</p><p>到九岭冈的时候，整个队伍已经相当疲惫了。具体什么时候到那里的我已经记不确切了，但那个时候着实是怀着是否能在天黑前登上雷洞坪的担忧。后面我奇迹般地感觉自己的小腿抽筋消歇了，在钻天坡一路向上中居然越战越勇。大家根据情况不同，整个队伍也逐渐拉长。当时我在第二位，前面和后面的同学都不在了。我看见了洗象池的屋顶的时候，看见了一个宽阔的平台，旁边的围栏上立着两只互相搔毛的猴子。然后我看见了洗象池几个字和后面的一列陡峭的阶梯。我的两腿突然传来一阵剧痛，然后我就地跪了下去。据后面同学说，是听见了我的惨叫声。不过总之来到了一个新的节点。</p><p>后面的阎王坡实在震撼人心，长度和陡度都远超前面的钻天坡。不久后就走进了夜路，看见道路两旁藏青色的影子往前进。当到了宾馆吃上晚饭的时候已经是 10 点了。那个时候也没什么胃口，手机没电了，可能只是想坐一坐了吧。</p><p>中间的小卖部密集且良心。冰粉实在是天赐美物，中途还买了瓶可乐刺激刺激，但是也怀疑是这个导致体内酸性上升，以致抽筋。小竹棍也是必备之物，后面的路途可能都是靠支着这个小竹棍一点点往上挪的吧。</p><p>好歹，这是第一次完成了一个 41km 的旅途，这是我来没有想过的东西。我原来想峨眉可能就 20km 吧，我能行。但……总之算是问题不大。第二日起床去金顶看日出。日出确实是壮丽的。伴随着众多举着相机的人的欢呼声，像高邮咸鸭蛋那般的红色太阳从云层的那端慢慢露出来，透露出整个咸鸭蛋黄的金橙颜色，越发地诱人。然后天空呈现出一种绚丽的金色，最后慢慢变成普通闪耀着金光和大菩萨像一样颜色的太阳了。</p><p>我不太清楚自己是怎么爬上这个山的。我只记得我在路途的最后一程，我发自内心地想，如果这一路哪怕有一个可以放弃的地方，我可能就结束在那里了吧。往上走的原因只是既不能停下来，也不能回头罢了，和意志力什么的是无甚关联的东西。</p>]]></content>
+    
+    
+    <summary type="html">&lt;div id=&quot;aplayer-WQprSgGQ&quot; class=&quot;aplayer aplayer-tag-marker meting-tag-marker&quot;
+         data-id=&quot;17685905&quot; data-server=&quot;netease&quot; data-type=&quot;song&quot; data-mode=&quot;circulation&quot; data-autoplay=&quot;false&quot; data-mutex=&quot;true&quot; data-listmaxheight=&quot;340px&quot; data-preload=&quot;auto&quot; data-theme=&quot;#ad7a86&quot;
+    &gt;&lt;/div&gt;
+&lt;p&gt;虽说已经过了快两个月了，还是想记下那个不那么特殊的旅途.2020 年劳动节的峨眉山之行。虽说确实没有太多值得大书特书的细节，但就算当作流水账一样地记下来也是不错的。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="随笔" scheme="https://josep-h.gitee.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+    <category term="行迹" scheme="https://josep-h.gitee.io/tags/%E8%A1%8C%E8%BF%B9/"/>
+    
+  </entry>
+  
+  <entry>
     <title>深度学习的操作们</title>
     <link href="https://josep-h.gitee.io/2020/06/27/scholar/DL_%E8%B0%83%E5%8F%82/"/>
     <id>https://josep-h.gitee.io/2020/06/27/scholar/DL_%E8%B0%83%E5%8F%82/</id>
@@ -903,6 +973,29 @@
     
     
     <category term="ML" scheme="https://josep-h.gitee.io/tags/ML/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PyTorch方法：DataSet</title>
+    <link href="https://josep-h.gitee.io/2020/06/27/tech/PyTorch_DataSet/"/>
+    <id>https://josep-h.gitee.io/2020/06/27/tech/PyTorch_DataSet/</id>
+    <published>2020-06-27T05:53:09.000Z</published>
+    <updated>2020-06-27T05:53:09.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>简单记录一下如何使用 PyTorch 的 DataSet 及 DataLoader 功能。</p><a id="more"></a>  <p>DataSet 的使用通过继承 DataSet 类完成，并在此基础上需要构造三个特殊函数。下例为使用 DataSet，通过访问 json 文件获取数据内容，然后在 gititem 函数中获取数据并返回的例子。</p><h2 id="DataSet"><a href="#DataSet" class="headerlink" title="DataSet"></a>DataSet</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="keyword">from</span> torch.utils.data <span class="keyword">import</span> DataLoader</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">DataSet</span><span class="params">(torch.utils.data.Dataset)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, train_or_valid, transform, path)</span>:</span></span><br><span class="line">        super().__init__()</span><br><span class="line">        file = open(<span class="string">'data/dataset.json'</span>, <span class="string">'r'</span>)</span><br><span class="line">        data = json.load(file)</span><br><span class="line">        self.datalist = data[train_or_valid]</span><br><span class="line">        self.path = path</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__getitem__</span><span class="params">(self, index)</span>:</span></span><br><span class="line">        name = self.datalist[index][<span class="number">0</span>]</span><br><span class="line">        img = Image.open(self.path + name)</span><br><span class="line">        label = self.datalist[index][<span class="number">1</span>]</span><br><span class="line">        <span class="keyword">return</span> &#123;<span class="string">"img"</span>: img, <span class="string">"label"</span>: label&#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__len__</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> len(self.datalist)</span><br></pre></td></tr></table></figure><p>上述返还的是一个数据字典。</p><h2 id="调用"><a href="#调用" class="headerlink" title="调用"></a>调用</h2><p>依旧使用上述的例子。</p><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">trainset = DataSet(<span class="string">'train'</span>, transform_train, normal_path)</span><br></pre></td></tr></table></figure><h2 id="DataLoader"><a href="#DataLoader" class="headerlink" title="DataLoader"></a>DataLoader</h2><p>DataLoader 是 PyTorch 用来调取 DataSet 的一个类，其声明和使用如下：</p><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> torch.utils <span class="keyword">import</span> data</span><br><span class="line"></span><br><span class="line">trainloader = data.DataLoader(trainset, batch_size = batch_sz, shuffle = <span class="literal">True</span>)</span><br></pre></td></tr></table></figure><p>第一个参数是上述生成的 DataSet，后面如同表述。</p><p>但往往上述的结构由于数据不规整不能满足要求，需要自己定义 Batch 函数。如下：</p><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> torch.utils <span class="keyword">import</span> data</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">padding</span><span class="params">(data)</span>:</span></span><br><span class="line">    src_len = []</span><br><span class="line">    <span class="keyword">for</span> p <span class="keyword">in</span> data:</span><br><span class="line">        src_len.append(p[<span class="string">'wav'</span>].shape[<span class="number">1</span>])</span><br><span class="line">    src_pad = torch.zeros(len(data), data[<span class="number">0</span>][<span class="string">'wav'</span>].shape[<span class="number">0</span>], max(src_len))</span><br><span class="line">    tgt = torch.zeros(len(data))</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(data)):</span><br><span class="line">        p = data[i]</span><br><span class="line">        end = src_len[i]</span><br><span class="line">        src_pad[i, :, -end:] = p[<span class="string">'wav'</span>]</span><br><span class="line">        tgt[i] = p[<span class="string">'label'</span>]</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> &#123;<span class="string">'wav'</span>: src_pad, <span class="string">'label'</span>: tgt&#125;</span><br><span class="line"></span><br><span class="line">validloader = data.DataLoader(validset, batch_size = batch_sz, shuffle = <span class="literal">False</span>, collate_fn = padding)</span><br></pre></td></tr></table></figure><p>返回的也是字典，并会使用 padding 函数。</p><h2 id="调用-1"><a href="#调用-1" class="headerlink" title="调用"></a>调用</h2><p>上面完成了预先代码的构建，最后是调用的步骤：</p><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> idx, samples <span class="keyword">in</span> enumerate(trainloader):</span><br><span class="line">    wavs, labels = samples[<span class="string">'wav'</span>], samples[<span class="string">'label'</span>]</span><br><span class="line">    <span class="keyword">pass</span></span><br></pre></td></tr></table></figure><p>返回的 samples 就是前面 padding 的结果，可以对此进行修改，例如保留原有的长度信息等等。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;简单记录一下如何使用 PyTorch 的 DataSet 及 DataLoader 功能。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技巧" scheme="https://josep-h.gitee.io/categories/%E6%8A%80%E5%B7%A7/"/>
+    
+    
+    <category term="PyTorch" scheme="https://josep-h.gitee.io/tags/PyTorch/"/>
+    
+    <category term="Python" scheme="https://josep-h.gitee.io/tags/Python/"/>
     
   </entry>
   
@@ -950,78 +1043,6 @@
     
     
     <category term="ML" scheme="https://josep-h.gitee.io/tags/ML/"/>
-    
-    <category term="PyTorch" scheme="https://josep-h.gitee.io/tags/PyTorch/"/>
-    
-    <category term="Python" scheme="https://josep-h.gitee.io/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>观佛记</title>
-    <link href="https://josep-h.gitee.io/2020/06/27/essay/tour/%E5%B3%A8%E7%9C%89%E8%A1%8C/"/>
-    <id>https://josep-h.gitee.io/2020/06/27/essay/tour/%E5%B3%A8%E7%9C%89%E8%A1%8C/</id>
-    <published>2020-06-27T05:53:09.000Z</published>
-    <updated>2020-06-27T05:53:09.000Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>    <div id="aplayer-WQprSgGQ" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="17685905" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"    ></div><p>虽说已经过了快两个月了，还是想记下那个不那么特殊的旅途.2020 年劳动节的峨眉山之行。虽说确实没有太多值得大书特书的细节，但就算当作流水账一样地记下来也是不错的。</p><a id="more"></a>  <p>事实上这个旅程是我从哈尔滨回来以后就一直在考虑的，然而最终因为疫情的原因没能在春节附近付诸实践，实在可惜。然情况总是纷繁复杂，居然到了五一节，我们这些学生还是滞留在自己的窝里面没有返校。五一节的几日长假不得不使人再次萌生了造访峨眉的想法，于是简单组织一通后和几个高中同学一同出发了。</p><p>一早起来，大概九点到了峨眉山脚。当时正逢疫情还在尾声的时候，每一个关卡都要检查健康码之类的东西。不过没有造成太大的阻碍，我们进山了。在山门口买了个舒适的竹杖。（这确实是救命的东西，不是打猴子，而是作为另一条腿。）一路上人不算太多，环境也很清幽。走走停停就能看见小亭子之类的东西。风景很难说是绝美，不过与城市的氛围自然还是迥异。最开始沿着山谷走，能一直看见下面流淌的透明小溪。这种景色总给我一种我曾经来过的感觉，可能是这样的风景实在是太多了吧。</p><p>一路上碰到一个山大王抢恰巧同行的一个小团队成员的小挎包。还恋恋不舍地跟了很久，但什么都没有抢到。大概是在仙峰寺附近，我的腿开始出现抽筋的症状，本来是一只腿，后来不幸另一条腿也开始抽筋。大概像是一条很粗的虫子在筋肉里穿梭的感觉。虽然感觉到疼但还是得往上走吧，一日登上峨眉算不上那么容易的事情。中间反复了几次，但通过休息和压腿算是稳定了下来。</p><p>然后仙峰寺之后是令人崩溃的上上下下。每一次站在一个山头，就看见另一个山头的小黑顶庙子，意识到那是下一个目的地的同时，得知需要先下山然后再爬到那里，是真的想骂上几句脏话，仿佛获得了前功尽弃的挫败感。这一路上的风景也相当的一般，没有想象中的那种壮美，也没有山大王之流的助兴。</p><p>到九岭冈的时候，整个队伍已经相当疲惫了。具体什么时候到那里的我已经记不确切了，但那个时候着实是怀着是否能在天黑前登上雷洞坪的担忧。后面我奇迹般地感觉自己的小腿抽筋消歇了，在钻天坡一路向上中居然越战越勇。大家根据情况不同，整个队伍也逐渐拉长。当时我在第二位，前面和后面的同学都不在了。我看见了洗象池的屋顶的时候，看见了一个宽阔的平台，旁边的围栏上立着两只互相搔毛的猴子。然后我看见了洗象池几个字和后面的一列陡峭的阶梯。我的两腿突然传来一阵剧痛，然后我就地跪了下去。据后面同学说，是听见了我的惨叫声。不过总之来到了一个新的节点。</p><p>后面的阎王坡实在震撼人心，长度和陡度都远超前面的钻天坡。不久后就走进了夜路，看见道路两旁藏青色的影子往前进。当到了宾馆吃上晚饭的时候已经是 10 点了。那个时候也没什么胃口，手机没电了，可能只是想坐一坐了吧。</p><p>中间的小卖部密集且良心。冰粉实在是天赐美物，中途还买了瓶可乐刺激刺激，但是也怀疑是这个导致体内酸性上升，以致抽筋。小竹棍也是必备之物，后面的路途可能都是靠支着这个小竹棍一点点往上挪的吧。</p><p>好歹，这是第一次完成了一个 41km 的旅途，这是我来没有想过的东西。我原来想峨眉可能就 20km 吧，我能行。但……总之算是问题不大。第二日起床去金顶看日出。日出确实是壮丽的。伴随着众多举着相机的人的欢呼声，像高邮咸鸭蛋那般的红色太阳从云层的那端慢慢露出来，透露出整个咸鸭蛋黄的金橙颜色，越发地诱人。然后天空呈现出一种绚丽的金色，最后慢慢变成普通闪耀着金光和大菩萨像一样颜色的太阳了。</p><p>我不太清楚自己是怎么爬上这个山的。我只记得我在路途的最后一程，我发自内心地想，如果这一路哪怕有一个可以放弃的地方，我可能就结束在那里了吧。往上走的原因只是既不能停下来，也不能回头罢了，和意志力什么的是无甚关联的东西。</p>]]></content>
-    
-    
-    <summary type="html">&lt;div id=&quot;aplayer-WQprSgGQ&quot; class=&quot;aplayer aplayer-tag-marker meting-tag-marker&quot;
-         data-id=&quot;17685905&quot; data-server=&quot;netease&quot; data-type=&quot;song&quot; data-mode=&quot;circulation&quot; data-autoplay=&quot;false&quot; data-mutex=&quot;true&quot; data-listmaxheight=&quot;340px&quot; data-preload=&quot;auto&quot; data-theme=&quot;#ad7a86&quot;
-    &gt;&lt;/div&gt;
-&lt;p&gt;虽说已经过了快两个月了，还是想记下那个不那么特殊的旅途.2020 年劳动节的峨眉山之行。虽说确实没有太多值得大书特书的细节，但就算当作流水账一样地记下来也是不错的。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="随笔" scheme="https://josep-h.gitee.io/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-    
-    <category term="行迹" scheme="https://josep-h.gitee.io/tags/%E8%A1%8C%E8%BF%B9/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CV：深度卷积神经网络模型及调参</title>
-    <link href="https://josep-h.gitee.io/2020/06/27/scholar/DL_DCNN/"/>
-    <id>https://josep-h.gitee.io/2020/06/27/scholar/DL_DCNN/</id>
-    <published>2020-06-27T05:53:09.000Z</published>
-    <updated>2020-06-27T05:53:09.000Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>因为连续做了两个使用 CNN 网络的模型训练，所以这里单独开一个记录 CNN 调参的心路历程。</p><a id="more"></a>  <h2 id="模型"><a href="#模型" class="headerlink" title="模型"></a>模型</h2><p>经过众多测试，得到的通用模型如下。基本思想是深的神经网络以及小的卷积核，并且卷积核的 channel 逐渐增加的机制。</p><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">SuperNaiveModel</span><span class="params">(nn.Module)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        super(SuperNaiveModel, self).__init__()</span><br><span class="line">        self.conv0 = nn.Sequential(</span><br><span class="line">            torch.nn.Conv2d(<span class="number">1</span>, <span class="number">64</span>, kernel_size=<span class="number">5</span>, stride=<span class="number">2</span>, padding=<span class="number">3</span>),</span><br><span class="line">            torch.nn.BatchNorm2d(<span class="number">64</span>, momentum=<span class="number">0.1</span>),            </span><br><span class="line">            torch.nn.ReLU(),</span><br><span class="line">        )</span><br><span class="line">        self.conv1 = torch.nn.Sequential(</span><br><span class="line">            torch.nn.Conv2d(<span class="number">64</span>, <span class="number">128</span>, kernel_size=<span class="number">3</span>, stride=<span class="number">1</span>, padding=<span class="number">1</span>),</span><br><span class="line">            torch.nn.ReLU(),</span><br><span class="line">            torch.nn.Conv2d(<span class="number">128</span>, <span class="number">128</span>, kernel_size=<span class="number">3</span>, stride=<span class="number">1</span>, padding=<span class="number">1</span>),</span><br><span class="line">            torch.nn.ReLU(),</span><br><span class="line">            torch.nn.MaxPool2d(stride=<span class="number">2</span>, kernel_size=<span class="number">2</span>))</span><br><span class="line">        self.conv2 = torch.nn.Sequential(</span><br><span class="line">            torch.nn.Conv2d(<span class="number">128</span>, <span class="number">256</span>, kernel_size=<span class="number">3</span>, stride=<span class="number">1</span>, padding=<span class="number">1</span>),</span><br><span class="line">            torch.nn.ReLU(),            </span><br><span class="line">            torch.nn.Conv2d(<span class="number">256</span>, <span class="number">256</span>, kernel_size=<span class="number">3</span>, stride=<span class="number">1</span>, padding=<span class="number">1</span>),</span><br><span class="line">            torch.nn.ReLU(),</span><br><span class="line">            torch.nn.MaxPool2d(stride=<span class="number">2</span>, kernel_size=<span class="number">2</span>))</span><br><span class="line">        self.conv20 = torch.nn.Sequential(</span><br><span class="line">            torch.nn.Conv2d(<span class="number">256</span>, <span class="number">256</span>, kernel_size=<span class="number">3</span>, stride=<span class="number">1</span>, padding=<span class="number">1</span>),</span><br><span class="line">            torch.nn.ReLU(),            </span><br><span class="line">            torch.nn.Conv2d(<span class="number">256</span>, <span class="number">256</span>, kernel_size=<span class="number">3</span>, stride=<span class="number">1</span>, padding=<span class="number">1</span>),</span><br><span class="line">            torch.nn.ReLU(),</span><br><span class="line">            torch.nn.MaxPool2d(stride=<span class="number">2</span>, kernel_size=<span class="number">2</span>))</span><br><span class="line">        self.conv3=torch.nn.Sequential(</span><br><span class="line">            torch.nn.Conv2d(<span class="number">256</span>, <span class="number">512</span>, kernel_size=<span class="number">3</span>, stride=<span class="number">1</span>, padding=<span class="number">1</span>),</span><br><span class="line">            torch.nn.BatchNorm2d(<span class="number">512</span>, momentum=<span class="number">0.1</span>),            </span><br><span class="line">            torch.nn.ReLU(),            </span><br><span class="line">            torch.nn.Conv2d(<span class="number">512</span>, <span class="number">512</span>, kernel_size=<span class="number">3</span>, stride=<span class="number">1</span>, padding=<span class="number">1</span>),</span><br><span class="line">            torch.nn.BatchNorm2d(<span class="number">512</span>, momentum=<span class="number">0.1</span>),</span><br><span class="line">            torch.nn.ReLU(),</span><br><span class="line">            torch.nn.MaxPool2d(stride=<span class="number">2</span>, kernel_size=<span class="number">2</span>))</span><br><span class="line">        self.dense = torch.nn.Sequential(</span><br><span class="line">            torch.nn.Linear(<span class="number">512</span> * <span class="number">4</span> * <span class="number">4</span>, <span class="number">20</span>),</span><br><span class="line">            nn.LogSoftmax(dim=<span class="number">1</span>)</span><br><span class="line">            )</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">forward</span><span class="params">(self, x)</span>:</span></span><br><span class="line">        x = x.reshape(x.shape[<span class="number">0</span>], <span class="number">1</span>, <span class="number">128</span>, <span class="number">128</span>).float()</span><br><span class="line">        x = self.conv0(x)</span><br><span class="line">        x = self.conv1(x)</span><br><span class="line">        x = self.conv2(x)</span><br><span class="line">        x = self.conv20(x)</span><br><span class="line">        x = self.conv3(x)</span><br><span class="line">        x = x.view(x.shape[<span class="number">0</span>], <span class="number">512</span> * <span class="number">4</span> * <span class="number">4</span>)</span><br><span class="line">        x = self.dense(x)</span><br><span class="line">        <span class="keyword">return</span> x1</span><br></pre></td></tr></table></figure><h2 id="设定"><a href="#设定" class="headerlink" title="设定"></a>设定</h2><p>由于训练资源不够，所以使用一个 5x5 的卷积核代替了应有的两个 3x3 卷积核链接的效果。根据 VGG，<strong>连续使用两个 3x3</strong>可能效果会好一些。</p><p>Batchnorm 是一个玄学的东西，它的功能并不如预期一样稳定，并且没有必要在没一个网络后都接一个 BN 层。事实上，根据实验，在模型的最开始和最后一层添加 BN 层的效果是明显的。ReLU 层作为非线性化的方法，几乎是必须的。</p><p>此外，过多的全连接层是不利的，每多增一个全连接层会对模型造成一定的影响。预测的原因是由于数据量不够支撑全连接层的泛化性，导致容易过拟合，泛化性差，反而不如一层全连接。所以全连接层越多越好不是绝对的。</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;因为连续做了两个使用 CNN 网络的模型训练，所以这里单独开一个记录 CNN 调参的心路历程。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="学术" scheme="https://josep-h.gitee.io/categories/%E5%AD%A6%E6%9C%AF/"/>
-    
-    
-    <category term="ML" scheme="https://josep-h.gitee.io/tags/ML/"/>
-    
-    <category term="CV" scheme="https://josep-h.gitee.io/tags/CV/"/>
-    
-    <category term="PyTorch" scheme="https://josep-h.gitee.io/tags/PyTorch/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PyTorch方法：DataSet</title>
-    <link href="https://josep-h.gitee.io/2020/06/27/tech/PyTorch_DataSet/"/>
-    <id>https://josep-h.gitee.io/2020/06/27/tech/PyTorch_DataSet/</id>
-    <published>2020-06-27T05:53:09.000Z</published>
-    <updated>2020-06-27T05:53:09.000Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>简单记录一下如何使用 PyTorch 的 DataSet 及 DataLoader 功能。</p><a id="more"></a>  <p>DataSet 的使用通过继承 DataSet 类完成，并在此基础上需要构造三个特殊函数。下例为使用 DataSet，通过访问 json 文件获取数据内容，然后在 gititem 函数中获取数据并返回的例子。</p><h2 id="DataSet"><a href="#DataSet" class="headerlink" title="DataSet"></a>DataSet</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="keyword">from</span> torch.utils.data <span class="keyword">import</span> DataLoader</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">DataSet</span><span class="params">(torch.utils.data.Dataset)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, train_or_valid, transform, path)</span>:</span></span><br><span class="line">        super().__init__()</span><br><span class="line">        file = open(<span class="string">'data/dataset.json'</span>, <span class="string">'r'</span>)</span><br><span class="line">        data = json.load(file)</span><br><span class="line">        self.datalist = data[train_or_valid]</span><br><span class="line">        self.path = path</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__getitem__</span><span class="params">(self, index)</span>:</span></span><br><span class="line">        name = self.datalist[index][<span class="number">0</span>]</span><br><span class="line">        img = Image.open(self.path + name)</span><br><span class="line">        label = self.datalist[index][<span class="number">1</span>]</span><br><span class="line">        <span class="keyword">return</span> &#123;<span class="string">"img"</span>: img, <span class="string">"label"</span>: label&#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__len__</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> len(self.datalist)</span><br></pre></td></tr></table></figure><p>上述返还的是一个数据字典。</p><h2 id="调用"><a href="#调用" class="headerlink" title="调用"></a>调用</h2><p>依旧使用上述的例子。</p><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">trainset = DataSet(<span class="string">'train'</span>, transform_train, normal_path)</span><br></pre></td></tr></table></figure><h2 id="DataLoader"><a href="#DataLoader" class="headerlink" title="DataLoader"></a>DataLoader</h2><p>DataLoader 是 PyTorch 用来调取 DataSet 的一个类，其声明和使用如下：</p><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> torch.utils <span class="keyword">import</span> data</span><br><span class="line"></span><br><span class="line">trainloader = data.DataLoader(trainset, batch_size = batch_sz, shuffle = <span class="literal">True</span>)</span><br></pre></td></tr></table></figure><p>第一个参数是上述生成的 DataSet，后面如同表述。</p><p>但往往上述的结构由于数据不规整不能满足要求，需要自己定义 Batch 函数。如下：</p><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> torch.utils <span class="keyword">import</span> data</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">padding</span><span class="params">(data)</span>:</span></span><br><span class="line">    src_len = []</span><br><span class="line">    <span class="keyword">for</span> p <span class="keyword">in</span> data:</span><br><span class="line">        src_len.append(p[<span class="string">'wav'</span>].shape[<span class="number">1</span>])</span><br><span class="line">    src_pad = torch.zeros(len(data), data[<span class="number">0</span>][<span class="string">'wav'</span>].shape[<span class="number">0</span>], max(src_len))</span><br><span class="line">    tgt = torch.zeros(len(data))</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(data)):</span><br><span class="line">        p = data[i]</span><br><span class="line">        end = src_len[i]</span><br><span class="line">        src_pad[i, :, -end:] = p[<span class="string">'wav'</span>]</span><br><span class="line">        tgt[i] = p[<span class="string">'label'</span>]</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> &#123;<span class="string">'wav'</span>: src_pad, <span class="string">'label'</span>: tgt&#125;</span><br><span class="line"></span><br><span class="line">validloader = data.DataLoader(validset, batch_size = batch_sz, shuffle = <span class="literal">False</span>, collate_fn = padding)</span><br></pre></td></tr></table></figure><p>返回的也是字典，并会使用 padding 函数。</p><h2 id="调用-1"><a href="#调用-1" class="headerlink" title="调用"></a>调用</h2><p>上面完成了预先代码的构建，最后是调用的步骤：</p><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> idx, samples <span class="keyword">in</span> enumerate(trainloader):</span><br><span class="line">    wavs, labels = samples[<span class="string">'wav'</span>], samples[<span class="string">'label'</span>]</span><br><span class="line">    <span class="keyword">pass</span></span><br></pre></td></tr></table></figure><p>返回的 samples 就是前面 padding 的结果，可以对此进行修改，例如保留原有的长度信息等等。</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;简单记录一下如何使用 PyTorch 的 DataSet 及 DataLoader 功能。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="技巧" scheme="https://josep-h.gitee.io/categories/%E6%8A%80%E5%B7%A7/"/>
-    
     
     <category term="PyTorch" scheme="https://josep-h.gitee.io/tags/PyTorch/"/>
     
