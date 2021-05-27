@@ -1,0 +1,155 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content=""><title>DSP：MFCC计算 | Bonjour</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="/css/dark.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/8.0.1/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.1/pure-min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.1/grids-responsive-min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/3.4.1/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><script type="text/javascript" src="//lib.baomitu.com/clipboard.js/2.0.4/clipboard.min.js"></script><script type="text/javascript" src="//lib.baomitu.com/toastr.js/2.1.4/toastr.min.js"></script><link rel="stylesheet" href="//lib.baomitu.com/toastr.js/2.1.4/toastr.min.css"><meta name="generator" content="Hexo 4.2.0"><link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
+<script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
+<script src="\assets\js\Meting.min.js" class="meting-script-marker"></script>
+</head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">DSP：MFCC计算</h1><a id="logo" href="/.">Bonjour</a><p class="description">注意：本站点已移动至新的域名</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> Home</i></a><a href="/tag/"><i class="fa fa-tag"> Tag</i></a><a href="/archives/"><i class="fa fa-archive"> Archive</i></a><a href="/bookmark/"><i class="fa fa-bookmark"> Bookmark</i></a><a href="/timeline/"><i class="fa fa-hourglass"> Timeline</i></a><a href="/About/"><i class="fa fa-user"> About</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">DSP：MFCC计算</h1><div class="post-meta">2020-05-23<span> | </span><span class="category"><a href="/categories/%E5%AD%A6%E7%A7%91/">学科</a></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><span class="count"></span><span class="post-count"> 1.4k</span><span class="post-meta-item-text"> Words</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><span class="time"></span><span class="post-count"> 5</span><span class="post-meta-item-text"> Minutes</span></span></span></div><a class="disqus-comment-count" href="/2020/course/DSP/MFCC/#vcomment"><span class="valine-comment-count" data-xid="/2020/course/DSP/MFCC/"></span><span> Comment</span></a><div class="clear"><div class="toc-article" id="toc"><div class="toc-title">Contents</div><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-人听觉系统的特性"><span class="toc-text">1. 人听觉系统的特性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-MFCC的计算步骤"><span class="toc-text">2. MFCC的计算步骤</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-预加重、分帧、加窗"><span class="toc-text">2.1 预加重、分帧、加窗</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-FFT"><span class="toc-text">2.2 FFT</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-Mel滤波器组"><span class="toc-text">2.3 Mel滤波器组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4-离散馀弦变换（DCT）"><span class="toc-text">2.4 离散馀弦变换（DCT）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-5-Delta-MFCC"><span class="toc-text">2.5 Delta MFCC</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-MFCC常用参数集"><span class="toc-text">3. MFCC常用参数集</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-参考"><span class="toc-text">4. 参考</span></a></li></ol></div></div><br><br><br><div class="post-content">
+    <div id="aplayer-bKRHSCMo" class="aplayer aplayer-tag-marker meting-tag-marker"
+         data-id="5173080" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"
+    ></div>
+<p>MCFF（Mel Frequency Cepstrum Coefficient）的计算过程、背景以及相应的<code>python</code>代码。</p>
+<a id="more"></a>  
+<p><strong>MFCC</strong>：考虑了人的听觉系统特性，将线性频谱映射到基于听觉感知特性的 Mel 频谱上，然后再计算倒谱。声道的 shape 表现为短时间功率谱的包络线（envelope of the short time power spectrum），MFCCs 的工作则是如何准确地表征这种 envelope。</p>
+<h2 id="1-人听觉系统的特性"><a href="#1-人听觉系统的特性" class="headerlink" title="1. 人听觉系统的特性"></a>1. <strong>人听觉系统的特性</strong></h2><p>人听到的声音高低和声音频率不成线性关系，而是成对数关系。</p>
+<script type="math/tex; mode=display">B(f)=2595log_{10}(1+\frac{f}{700})</script><p><strong>屏蔽效应：</strong>人不能听到所有的声音，只有两个频率分量相差一定的<strong>带宽</strong>时，人耳才能区分。否则只有听到一个音调。这个带宽称为<strong>临界带宽</strong>：</p>
+<script type="math/tex; mode=display">BW_c=25+75[1+1.4(\frac{f_c}{1000})^2]^{0.69}</script><ul>
+<li>其中$f_c$为中心频率。</li>
+<li>当$f_c$在 1kHz 以下时，临界带宽基本恒定为 100Hz。</li>
+<li>当$f_c$在 1kHz 以上时，临界带宽呈指数增加。</li>
+</ul>
+<p>模拟上述的听觉特性，可以进行构造模仿人耳的感知特性。</p>
+<ul>
+<li>Mel 频率尺度：对数关系</li>
+<li>Mel 滤波器组：屏蔽效应<ul>
+<li>每一个滤波器的中心频率在 mel 频率域中呈等间隔分布</li>
+<li>每一个滤波器的带宽在其临界带宽范围内</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-MFCC的计算步骤"><a href="#2-MFCC的计算步骤" class="headerlink" title="2. MFCC的计算步骤"></a>2. MFCC的计算步骤</h2><ol>
+<li>输入语音信号 — 语音波谱</li>
+<li>预加重、分帧、加窗 — 分为不同帧的语音波谱</li>
+<li>用 FFT 计算信号频谱 — 不同帧对应的频谱</li>
+<li>计算频谱的绝对值/平方 — 不同帧对应的能量谱</li>
+<li>使用 Mel 滤波器组 — 获得更符合人类听觉的 Mel 谱特征</li>
+<li>取对数 — 为了倒谱做准备</li>
+<li>DCT — 将乘积通过对数转化为加法。</li>
+<li>Delta MFCC</li>
+<li>输出语音特征</li>
+</ol>
+<h3 id="2-1-预加重、分帧、加窗"><a href="#2-1-预加重、分帧、加窗" class="headerlink" title="2.1 预加重、分帧、加窗"></a>2.1 预加重、分帧、加窗</h3><p><strong>2.1.1 预加重</strong></p>
+<script type="math/tex; mode=display">H(Z)=1-\mu z^{-1}</script><p>即通过一个高通滤波器。在时域中写为：</p>
+<script type="math/tex; mode=display">s_m=s_m-\mu s_{m-1}</script><p>预加重的目的是使频谱变得平坦。同时，也是为了消除发生过程中声带和嘴唇的效应，来补偿语音信号受到发音系统所抑制的高频部分，也为了突出高频的共振峰。$\mu$的取值一般为 0.9~1 之间。</p>
+<p><strong>2.1.2 分帧</strong><br>一个窗为一帧。通常情况下 N=256，时间为 20ms~30ms。对于 8kHz 的信号来说，若帧长度为 256 个采样点，则对应的时间为$256 / 8000\times 1000 = 32ms$。</p>
+<p><strong>2.1.3 加窗</strong><br>对每一帧使用汉明窗。通常，$a$取值为 0.46.</p>
+<script type="math/tex; mode=display">w(n)=1-a[1+cos(\frac{2\pi n}{N-1})]</script><h3 id="2-2-FFT"><a href="#2-2-FFT" class="headerlink" title="2.2 FFT"></a>2.2 FFT</h3><p>对每一帧进行 FFT，变换到频率域中。</p>
+<h3 id="2-3-Mel滤波器组"><a href="#2-3-Mel滤波器组" class="headerlink" title="2.3 Mel滤波器组"></a>2.3 Mel滤波器组</h3><p>人的听力像是一组滤波器（见第一节讨论的<strong>屏蔽效应</strong>），听见的声音在频谱上是不连续的;并且在低频上分布更密集（同样参见第一节中人听到的声音特性）。将能量谱通过一组 Mel 尺度的三角形滤波器组，定义一个有 $M$ 个滤波器的滤波器组。</p>
+<center>
+<img src="/images/Single/Mel组.jpg" width="50%" height="50%" />
+</center>
+
+<ul>
+<li>中心频率$f_c(l)$在 Mel 频率域中是等间隔分布</li>
+<li>每一个滤波器的中心频率为：<script type="math/tex; mode=display">f(m)=(\frac{N}{F_s})B^{-1}(B(f_l)+m\frac{B(f_h)-B(f_l)}{M+1})</script>其中：$N$为窗口宽度，$F_s$为采样频率，$M$为滤波器数量，通常取 22~26。通过上式可以获得 M 个带通滤波器$H_m(k)$<script type="math/tex; mode=display">
+H_m(k)=
+\begin{cases}
+0 & \text{ k < f(m-1) }\\
+\frac{k-f(m-1)}{f(m)-f(m-1)} & \text{ f(m-1) < k < f(m) }\\
+\frac{f(m+1)-k}{f(m+1)-f(m)} & \text{ f(m) < k < f(m+1) }\\
+0 & \text{ otherwise }
+\end{cases}</script></li>
+</ul>
+<center>
+<img src="/images/Single/DSP-滤波器组.jpg" width="50%" height="50%"/>
+</center>
+
+<p>对频谱进行平滑化，并消除谐波的作用，突显原先语音的共振峰。因此一段语音的音调或音高，是不会呈现在 MFCC 参数内，换句话说，以 MFCC 为特征的语音辨识系统，并<strong>不会受到输入语音的音调不同的影响</strong>。此外，还可以降低运算量。</p>
+<p>计算每个滤波器组输出的对数能量。其中$M$为滤波器个数，$N$为窗口大小。</p>
+<script type="math/tex; mode=display">S(m)=ln[\sum_{k=1}^N|X(k)|^2H_m(k)]</script><!-- **MFCC**
+$$log|S(e^{jw})|=\sum_{m=-\infty}^{\infty}c_me^{-jwn}$$
+$$S(w)=lim_{N\to\infty}\frac{1}{N}|X(e^{jw})|^2=lim_{N\to\infty}\frac{1}{N}|\sum_{n=0}^{N-1}x(n)e^{-jwn}|^2$$ -->
+<h3 id="2-4-离散馀弦变换（DCT）"><a href="#2-4-离散馀弦变换（DCT）" class="headerlink" title="2.4 离散馀弦变换（DCT）"></a>2.4 离散馀弦变换（DCT）</h3><p>对滤波器组输出$S(m)$，DCT 得到 Mel 频率的倒谱系数$c(n)$。</p>
+<p>DCT 正变换：</p>
+<script type="math/tex; mode=display">
+   \begin{aligned}
+       F(0) &= \frac{1}{\sqrt{N}}\sum_{x=0}^{N-1}f(x),~~~u=0 \\
+       F(u) &= \sqrt{\frac{2}{N}}\sum_{x=0}^{N-1}f(x)cos[\frac{\pi}{2N}(2x+1)u], ~~~u=1,2,3...,N-1
+   \end{aligned}</script><p>DCT 反变换：</p>
+<script type="math/tex; mode=display">f(x)=\frac{1}{\sqrt(N)}F(0)+\sqrt{\frac{2}{N}}\sum_{u=0}^{N-1}F(u)cos[\frac{\pi}{2N}(2x+1)u], ~~~x=1,2,3,...,N-1</script><p>将$S(m)$作为上式中的$f(x)$，$m$作为$x$得到下式：</p>
+<script type="math/tex; mode=display">c(n)=\sum_{m=1}^MS(m)cos[\frac{\pi n(m-0.5)}{M}], ~~~n=0,1,...,L</script><p>这里的$L$是 MFCC 系数的阶数，通常取 12~16。</p>
+<h3 id="2-5-Delta-MFCC"><a href="#2-5-Delta-MFCC" class="headerlink" title="2.5 Delta MFCC"></a>2.5 Delta MFCC</h3><p>到此为止，MFCC 只是获得了当前帧的语音特征。而相邻帧之间是连续的，可以通过相邻帧之间的变化更好地表达语音的特征。</p>
+<center>
+<img src="/images/Single/DMFCC.jpg"/>
+</center>
+
+<h2 id="3-MFCC常用参数集"><a href="#3-MFCC常用参数集" class="headerlink" title="3. MFCC常用参数集"></a>3. MFCC常用参数集</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>取值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mu$（预加重参数）</td>
+<td>0.9~1</td>
+</tr>
+<tr>
+<td>$N$（窗口大小）</td>
+<td>256/512</td>
+</tr>
+<tr>
+<td>采样率</td>
+<td>8kHz/16kHz</td>
+</tr>
+<tr>
+<td>帧长</td>
+<td>20ms~30ms</td>
+</tr>
+<tr>
+<td>$M$（Mel 滤波器组数量）</td>
+<td>22~26</td>
+</tr>
+<tr>
+<td>$L$（MFCC 阶数）</td>
+<td>12~16</td>
+</tr>
+<tr>
+<td>$a$（汉明窗系数）</td>
+<td>0.46</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="4-参考"><a href="#4-参考" class="headerlink" title="4. 参考"></a>4. 参考</h2><ol>
+<li>这篇文章将原理解释得挺不错：<a href="https://blog.csdn.net/zouxy09/article/details/9156785/" target="_blank" rel="noopener">梅尔频率倒谱系数（MFCC）</a></li>
+<li>这篇将流程解释得更清楚：<a href="https://blog.csdn.net/class_brick/article/details/82743741" target="_blank" rel="noopener">语音特征 MFCC 提取过程详解</a></li>
+</ol>
+</div><br><br><br><br><br><div class="tags"><a href="/tags/DSP/"><i class="fa fa-tag"></i>DSP</a></div><div class="post-nav"><a class="pre" href="/2020/scholar/paper/Classification%20of%20COVID_19/">论文阅读 - Classification of COVID-19 in chest X-ray images using DeTraC deep convolutional neural network</a><a class="next" href="/2020/scholar/paper/Departure_from_tree_structures_in_discourse/">论文阅读 - Departures from Tree Structures in Discourse - Shared Arguments in PDTB</a></div><div id="vcomment"></div><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script><script>var notify = 'true' == 'true' ? true : false;
+var verify = 'false' == 'true' ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'0rtR3fNYet3VBY2oxz9PtTCL-gzGzoHsz',
+  appKey:'eTtAP8PqhpwwlevtsVYdKlmk',
+  placeholder:'Anything',
+  avatar:'retro',
+  guest_info:guest_info,
+  pageSize:'10',
+  lang:'en'
+})
+</script></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><div class="search-form"><input id="local-search-input" placeholder="Search" type="text" name="q" results="0"/><div id="local-search-result"></div></div></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> Categories</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Draft/">Draft</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E6%9C%AF/">学术</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E7%A7%91/">学科</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%8A%80%E5%B7%A7/">技巧</a><span class="category-list-count">29</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%9A%A8%E7%AD%86/">隨筆</a><span class="category-list-count">38</span></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> Tags</i></div><div class="tagcloud"><a href="/tags/%E6%9B%B8%E4%BF%A1/" style="font-size: 15px;">書信</a> <a href="/tags/%E7%89%A9%E5%BF%97%E9%8A%98/" style="font-size: 15px;">物志銘</a> <a href="/tags/ML/" style="font-size: 15px;">ML</a> <a href="/tags/PyTorch/" style="font-size: 15px;">PyTorch</a> <a href="/tags/C/" style="font-size: 15px;">C++</a> <a href="/tags/NLP/" style="font-size: 15px;">NLP</a> <a href="/tags/Python/" style="font-size: 15px;">Python</a> <a href="/tags/Others/" style="font-size: 15px;">Others</a> <a href="/tags/Windows/" style="font-size: 15px;">Windows</a> <a href="/tags/%E8%84%9A%E6%9C%AC%E5%B7%A5%E5%85%B7/" style="font-size: 15px;">脚本工具</a> <a href="/tags/%E6%89%8B%E8%A8%98/" style="font-size: 15px;">手記</a> <a href="/tags/%E9%9B%9C%E8%A8%98/" style="font-size: 15px;">雜記</a> <a href="/tags/Go/" style="font-size: 15px;">Go</a> <a href="/tags/DSP/" style="font-size: 15px;">DSP</a> <a href="/tags/%E9%A3%9F%E8%AD%9C/" style="font-size: 15px;">食譜</a> <a href="/tags/CV/" style="font-size: 15px;">CV</a> <a href="/tags/Music/" style="font-size: 15px;">Music</a> <a href="/tags/%E8%A9%A9%E6%AD%8C%EF%BC%9F/" style="font-size: 15px;">詩歌？</a> <a href="/tags/%E8%A1%8C%E8%B7%A1/" style="font-size: 15px;">行跡</a> <a href="/tags/%E5%AE%89%E5%88%A9/" style="font-size: 15px;">安利</a> <a href="/tags/%E8%A7%80%E6%84%9F/" style="font-size: 15px;">觀感</a> <a href="/tags/%E8%A7%82%E6%84%9F/" style="font-size: 15px;">观感</a> <a href="/tags/Paper/" style="font-size: 15px;">Paper</a> <a href="/tags/Hexo/" style="font-size: 15px;">Hexo</a> <a href="/tags/LaTeX/" style="font-size: 15px;">LaTeX</a> <a href="/tags/vscode/" style="font-size: 15px;">vscode</a> <a href="/tags/%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/" style="font-size: 15px;">体系结构</a> <a href="/tags/Linux/" style="font-size: 15px;">Linux</a> <a href="/tags/%E9%9F%B3%E6%A8%82/" style="font-size: 15px;">音樂</a> <a href="/tags/%E6%80%AA%E4%BA%8B%E8%A8%98/" style="font-size: 15px;">怪事記</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> Recent</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2021/essay/%E4%B8%8D%E5%AE%8C%E6%95%B4%E9%81%93%E8%B7%AF/">不完整道路</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/essay/%E8%B7%AF%E8%BE%B9%E9%A3%8E%E5%B0%98%E6%95%85%E4%BA%8B/">路邊風塵故事</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/essay/%E8%B7%AF%E8%BE%B9%E5%B0%8F%E5%B1%8B/">路邊小屋</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/essay/music/%E9%A9%AC%E5%8B%92%E3%80%81%E9%9F%B3%E4%B9%90%E5%92%8C%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB%E7%9A%84%E4%B8%9C%E8%A5%BF/">馬勒、音樂、文字和雜七雜八的東西</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/essay/%E8%A7%82%E6%84%9F/%E3%80%8A%E5%85%A8%E8%81%8C%E7%8C%8E%E4%BA%BA%E3%80%8B%E8%A7%82%E6%84%9F/">《全職獵人》觀感</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/essay/tour/%E8%A7%82%E4%BD%9B%E8%AE%B0-%E5%85%B6%E4%BA%8C/">觀佛記 - 其二</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/essay/tour/%E8%92%99%E5%B0%98%E8%AE%B0/">蒙塵記</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/essay/%E3%80%8A%E9%87%91%E6%9E%9D%E3%80%8B%E8%AF%A1%E8%A8%80/">《金枝》詭言</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/essay/%E5%AE%89%E5%88%A9/%E8%BD%AF%E4%BB%B6%E5%AE%89%E5%88%A9%EF%BC%88Win10%EF%BC%89/">軟件安利（Win10）</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/essay/%E6%8A%95%E5%AD%90%E8%AE%B0/">投子記</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/essay/%E5%AE%89%E5%88%A9/%E6%8F%92%E4%BB%B6%E5%AE%89%E5%88%A9/">插件安利</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/essay/poems/Stopping%20by%20Woods%20on%20a%20Snowy%20Evening/">Stopping by Woods on a Snowy Evening</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/essay/poems/From%20the%20rolling%20ocean/">Out of the Rolling Ocean the Crowd</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> Links</i></div><ul></ul><a href="https://github.com/Josep-h" title="GitHub" target="_blank">GitHub</a><ul></ul><a href="https://music.163.com/#/user/home?id=252635253" title="Music" target="_blank">Music</a><ul></ul><a href="https://space.bilibili.com/136778607/" title="Bilibili" target="_blank">Bilibili</a><ul></ul><a href="runpeng.xie@outlook.com" title="Mail" target="_blank">Mail</a><ul></ul><a href="https://josep-h.gitee.io/atom.xml" title="RSS" target="_blank">RSS</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2021 <a href="/." rel="nofollow">Bonjour.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css"><link rel="stylesheet" type="text/css" href="/css/search.css?v=0.0.0"><script type="text/javascript" src="/js/search.js?v=0.0.0"></script><script>var search_path = 'search.xml';
+if (search_path.length == 0) {
+   search_path = 'search.xml';
+}
+var path = '/' + search_path;
+searchFunc(path, 'local-search-input', 'local-search-result');
+</script><script type="text/javascript" src="/js/copycode.js" successtext="Copy Successed!"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css"><script type="text/x-mathjax-config">MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML" async></script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script><!-- add calendar widget --></div></body></html>
