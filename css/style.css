@@ -243,6 +243,17 @@ div {
       font-family: "FontAwesome";
       content: "\f024";
       padding-right: 0.3em; }
+    .post .post-meta .disqus-comment-count {
+      padding: 0;
+      color: #6E7173;
+      display: inline; }
+      .post .post-meta .disqus-comment-count:before {
+        color: #B5495B;
+        font-family: "FontAwesome";
+        content: "\f075";
+        padding-right: 0.3em; }
+      .post .post-meta .disqus-comment-count:hover {
+        color: #444; }
   .post .post-meta-plus {
     padding: 0;
     margin: 15px 0 0;
@@ -260,6 +271,17 @@ div {
       font-family: "FontAwesome";
       content: "\f0ad";
       padding-right: 0.3em; }
+    .post .post-meta-plus .disqus-comment-count {
+      padding: 0;
+      color: #6E7173;
+      display: inline; }
+      .post .post-meta-plus .disqus-comment-count:before {
+        color: #B5495B;
+        font-family: "FontAwesome";
+        content: "\f075";
+        padding-right: 0.3em; }
+      .post .post-meta-plus .disqus-comment-count:hover {
+        color: #444; }
     .post .post-meta-plus .category:before {
       color: #c8a415;
       font-family: "FontAwesome";
@@ -281,19 +303,6 @@ div {
       content: "\f0e5";
       padding-right: 0.3em; }
     .post .ds-thread-count:hover {
-      color: #444; }
-  .post .disqus-comment-count {
-    padding: 0;
-    margin: 15px 0 0;
-    color: #6E7173;
-    float: right;
-    display: inline;
-    text-indent: .15em; }
-    .post .disqus-comment-count:before {
-      font-family: "FontAwesome";
-      content: "\f0e5";
-      padding-right: 0.3em; }
-    .post .disqus-comment-count:hover {
       color: #444; }
   .post .post-content {
     clear: left;
