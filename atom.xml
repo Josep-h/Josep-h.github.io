@@ -1158,6 +1158,29 @@
   </entry>
   
   <entry>
+    <title>Transformers使用</title>
+    <link href="https://blog.joseph-hails.site/2020/tech/Huggingface/"/>
+    <id>https://blog.joseph-hails.site/2020/tech/Huggingface/</id>
+    <published>2020-07-04T05:53:09.000Z</published>
+    <updated>2020-07-04T05:53:09.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>本地使用 Huggingface 的 transformer 挺麻烦的，可能之后还会碰到。这里做一个记录。</p><a id="more"></a>  <h2 id="模型下载"><a href="#模型下载" class="headerlink" title="模型下载"></a>模型下载</h2><p>模型如果标注了<code>from_pretrain(&#39;&#39;)</code>之类的，则需要加载模型。而不幸的是，官方下载模型的渠道很慢，需要使用离线下载方法。下述以 BERT 作为例子，下载步骤如下：</p><ol><li>进入链接，找到<a href="https://huggingface.co/models" target="_blank" rel="noopener">模型</a>的位置。</li><li>找到特殊的模型，进入<a href="https://huggingface.co/bert-base-uncased" target="_blank" rel="noopener">界面</a>。</li><li>在模型下方找到<a href="https://huggingface.co/bert-base-uncased#list-files" target="_blank" rel="noopener">List all files in model</a>。</li><li>选择其中的’config.json; pytorch_model.bin; vocab.txt’下载到同一个文件夹。</li></ol><h2 id="模型载入"><a href="#模型载入" class="headerlink" title="模型载入"></a>模型载入</h2><p>在开始载入以前，需要将上述下载文件放置到一个文件夹下。</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">\<span class="selector-tag">-</span> <span class="selector-tag">bert-uncased</span></span><br><span class="line">    <span class="selector-tag">config</span><span class="selector-class">.json</span></span><br><span class="line">    <span class="selector-tag">pytorch_model</span><span class="selector-class">.bin</span></span><br><span class="line">    <span class="selector-tag">vocab</span><span class="selector-class">.txt</span></span><br><span class="line"><span class="selector-tag">train</span><span class="selector-class">.py</span></span><br></pre></td></tr></table></figure><p>在 <code>train.py</code> 中的代码：</p><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> transformers <span class="keyword">import</span> BertTokenizer, BertModel</span><br><span class="line"></span><br><span class="line">path = <span class="string">'D:/LAB/LAB-last/lex-dis/cont-cont/bert-uncased'</span></span><br><span class="line">tokenizer = BertTokenizer.from_pretrained(path)</span><br><span class="line">model = BertModel.from_pretrained(path)</span><br></pre></td></tr></table></figure><p>这里模型载入即结束。使用相对路径不知为何不能成功，需要使用全地址。</p><h2 id="模型使用"><a href="#模型使用" class="headerlink" title="模型使用"></a>模型使用</h2><p>tokenizers 和 model 的使用这里暂时搁置。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;本地使用 Huggingface 的 transformer 挺麻烦的，可能之后还会碰到。这里做一个记录。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技巧" scheme="https://blog.joseph-hails.site/categories/%E6%8A%80%E5%B7%A7/"/>
+    
+    
+    <category term="PyTorch" scheme="https://blog.joseph-hails.site/tags/PyTorch/"/>
+    
+    <category term="NLP" scheme="https://blog.joseph-hails.site/tags/NLP/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo文件管理及自动更新</title>
     <link href="https://blog.joseph-hails.site/2020/tech/Hexo/Hexo%E6%96%87%E4%BB%B6%E5%A4%B9%E7%AE%A1%E7%90%86/"/>
     <id>https://blog.joseph-hails.site/2020/tech/Hexo/Hexo%E6%96%87%E4%BB%B6%E5%A4%B9%E7%AE%A1%E7%90%86/</id>
@@ -1179,29 +1202,6 @@
     
     
     <category term="Hexo" scheme="https://blog.joseph-hails.site/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Transformers使用</title>
-    <link href="https://blog.joseph-hails.site/2020/tech/Huggingface/"/>
-    <id>https://blog.joseph-hails.site/2020/tech/Huggingface/</id>
-    <published>2020-07-04T05:53:09.000Z</published>
-    <updated>2020-07-04T05:53:09.000Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>本地使用 Huggingface 的 transformer 挺麻烦的，可能之后还会碰到。这里做一个记录。</p><a id="more"></a>  <h2 id="模型下载"><a href="#模型下载" class="headerlink" title="模型下载"></a>模型下载</h2><p>模型如果标注了<code>from_pretrain(&#39;&#39;)</code>之类的，则需要加载模型。而不幸的是，官方下载模型的渠道很慢，需要使用离线下载方法。下述以 BERT 作为例子，下载步骤如下：</p><ol><li>进入链接，找到<a href="https://huggingface.co/models" target="_blank" rel="noopener">模型</a>的位置。</li><li>找到特殊的模型，进入<a href="https://huggingface.co/bert-base-uncased" target="_blank" rel="noopener">界面</a>。</li><li>在模型下方找到<a href="https://huggingface.co/bert-base-uncased#list-files" target="_blank" rel="noopener">List all files in model</a>。</li><li>选择其中的’config.json; pytorch_model.bin; vocab.txt’下载到同一个文件夹。</li></ol><h2 id="模型载入"><a href="#模型载入" class="headerlink" title="模型载入"></a>模型载入</h2><p>在开始载入以前，需要将上述下载文件放置到一个文件夹下。</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">\<span class="selector-tag">-</span> <span class="selector-tag">bert-uncased</span></span><br><span class="line">    <span class="selector-tag">config</span><span class="selector-class">.json</span></span><br><span class="line">    <span class="selector-tag">pytorch_model</span><span class="selector-class">.bin</span></span><br><span class="line">    <span class="selector-tag">vocab</span><span class="selector-class">.txt</span></span><br><span class="line"><span class="selector-tag">train</span><span class="selector-class">.py</span></span><br></pre></td></tr></table></figure><p>在 <code>train.py</code> 中的代码：</p><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> transformers <span class="keyword">import</span> BertTokenizer, BertModel</span><br><span class="line"></span><br><span class="line">path = <span class="string">'D:/LAB/LAB-last/lex-dis/cont-cont/bert-uncased'</span></span><br><span class="line">tokenizer = BertTokenizer.from_pretrained(path)</span><br><span class="line">model = BertModel.from_pretrained(path)</span><br></pre></td></tr></table></figure><p>这里模型载入即结束。使用相对路径不知为何不能成功，需要使用全地址。</p><h2 id="模型使用"><a href="#模型使用" class="headerlink" title="模型使用"></a>模型使用</h2><p>tokenizers 和 model 的使用这里暂时搁置。</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;本地使用 Huggingface 的 transformer 挺麻烦的，可能之后还会碰到。这里做一个记录。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="技巧" scheme="https://blog.joseph-hails.site/categories/%E6%8A%80%E5%B7%A7/"/>
-    
-    
-    <category term="PyTorch" scheme="https://blog.joseph-hails.site/tags/PyTorch/"/>
-    
-    <category term="NLP" scheme="https://blog.joseph-hails.site/tags/NLP/"/>
     
   </entry>
   
